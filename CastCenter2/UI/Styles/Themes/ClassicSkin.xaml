@@ -1,0 +1,13 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Color x:Key="ColorTop">#3A4149</Color>
+    <Color x:Key="ColorCenter">#3A4149</Color>
+    <Color x:Key="ColorButton">#282d33</Color>
+    <Color x:Key="ColorButtonPressed">#8D7DEC</Color>
+
+    <SolidColorBrush x:Key="ColorBrushTop" Color="{DynamicResource ColorTop}" />
+    <SolidColorBrush x:Key="ColorBrushCenter" Color="{DynamicResource ColorCenter}" />
+    <SolidColorBrush x:Key="ColorBrushButton" Color="{DynamicResource ColorButton}" />
+    <SolidColorBrush x:Key="ColorBrushButtonPressed" Color="{DynamicResource ColorButtonPressed}" />
+
+</ResourceDictionary>

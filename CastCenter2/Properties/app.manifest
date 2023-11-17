@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<assembly manifestVersion="1.0" xmlns="urn:schemas-microsoft-com:asm.v1">
+  <assemblyIdentity version="1.0.0.1" name="MyApplication.app"/>
+ 
+	<trustInfo xmlns="urn:schemas-microsoft-com:asm.v2">
+    <security>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+		  
+      </requestedPrivileges>
+    </security>
+  
+	</trustInfo>
+
+
+	<compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+		<application>
+			<!-- A list of the Windows versions that this application has been tested on and is
+           is designed to work with. Uncomment the appropriate elements and Windows will 
+           automatically selected the most compatible environment. -->
+
+			<!-- Windows 10 -->
+			<Capability Name="internetClient" />
+			<DeviceCapability Name="wiFiControl" />
+
+		</application>
+	</compatibility>
+
+</assembly>

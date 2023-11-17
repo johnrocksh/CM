@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="CastManager.Core.DependencyInjection">
+    <Position X="0.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAABAAAQAAAAAAAAZAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Core\DependencyInjection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.CoreImpl.TemplateHttpServer" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="25.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgACAAAAAAAAAAAAAAACIAAAAAIAAAIAAAAAI=</HashCode>
+      <FileName>CoreImpl\TemplateHttpServer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CastManager.CoreImpl.LookupService" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="4.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AgIAIAAAACBBAQkAAAAAAAAAACYAgAAhIAAAgAABAAg=</HashCode>
+      <FileName>CoreImpl\LookupService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="desktopDiscoveryWorker" />
+      <Field Name="devicesDiscoveryWorker" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CastManager.CoreImpl.DevicesService" BaseTypeListCollapsed="true">
+    <Position X="5" Y="9.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAUAAEAAAAEAAAAAAAAABQEgBAAAAAAIABAIBAAA=</HashCode>
+      <FileName>CoreImpl\DevicesService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Devices" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CastManager.CoreImpl.DesktopsService" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="13.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AgAACAAAAAAAAAAQAAAAAEAAAAAAAAAAAAAAIAIEAAA=</HashCode>
+      <FileName>CoreImpl\DesktopsService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Desktops" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CastManager.CoreImpl.AppGlobalEvents" BaseTypeListCollapsed="true">
+    <Position X="4.25" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\AppGlobalEvents.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.CoreImpl.AppConfiguration" BaseTypeListCollapsed="true">
+    <Position X="2.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAEAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\AppConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.CoreImpl.MonitorService">
+    <Position X="0.5" Y="22.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABAAEAAIgAAAAQAAAAAAAIAAAIAAAAAg=</HashCode>
+      <FileName>CoreImpl\MonitorServices\MonitorService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="pingDesktopsService" />
+      <Field Name="pingDeviceService" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CastManager.CoreImpl.TemplatesService">
+    <Position X="0.5" Y="17.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAQCAAQhACAgAAAQAAiAAAABAAAAAAEgAAAAA=</HashCode>
+      <FileName>CoreImpl\TemplatesService.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AllTemplateConfigs" />
+      <Property Name="CurrentConfig" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CastManager.Models.Desktops.PingDesktopsService">
+    <Position X="8.25" Y="22.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAQAAAAAAIAAAIAAAAAIAAAIAAEAAA=</HashCode>
+      <FileName>CoreImpl\MonitorServices\PingDesktopsService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Models.Device.PingDevicesService">
+    <Position X="4.75" Y="23.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAEAAAAAAAAQAIAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\MonitorServices\PingDevicesService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.CoreImpl.Lookup.DesktopDiscoveryWorker">
+    <Position X="5" Y="4.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAgAgAAACAAEAAABAgAQAAAACAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Workers\Lookup\DesktopDiscoveryWorker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CastManager.Models.Desktops.DesktopInfo">
+    <Position X="5" Y="13.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAASABAQAhQCAAAAAgAAAAAAAAAAAAAAAAAACAABIAA=</HashCode>
+      <FileName>Models\Desktops\DesktopInfo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="DesktopClient" />
+      <Property Name="DesktopConfig" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="TatamiConfigUrls" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CastManager.Models.Device.DeviceData">
+    <Position X="5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAQBAAAAAAAAAAAAAAAAAAAEIAAAQ=</HashCode>
+      <FileName>Models\Device\DeviceData.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Info" />
+      <Property Name="Config" />
+      <Property Name="Client" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="CastManager.Models.Device.DeviceConfig">
+    <Position X="8.25" Y="10" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAACAAAABAIgAAAAAAAAAAAAAAQIAAAAAAAAAA=</HashCode>
+      <FileName>Models\Device\DeviceConfig.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="HostConfigs" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CastManager.Models.Device.HostConfig">
+    <Position X="11.5" Y="10" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAQAAAAABAAAAAgCAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Device\HostConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Models.Desktops.DesktopConfig">
+    <Position X="11.5" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQCABAAAFAAAAAAEAAAAAAAACAIAAAAAAAAABAAIAA=</HashCode>
+      <FileName>Models\Desktops\DesktopConfig.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="TatamiConfigUrls" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="CastManager.Models.Device.DeviceInfo">
+    <Position X="13.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAIAAAAAAAAACAAAAAAAAAAAAAACgAA=</HashCode>
+      <FileName>Models\Device\DeviceInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Models.Desktops.TatamiTabloInfo">
+    <Position X="8.25" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAEAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Models\Desktops\TatamiTabloInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.CoreImpl.Lookup.DevicesDiscoveryWorker">
+    <Position X="8.25" Y="4.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAgAgAAACAAAAAABAgAQAAAACAAAAEAIAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Workers\Lookup\DevicesDiscoveryWorker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CastManager.Templates.Worker.AssemblyTemplateImageWorker">
+    <Position X="9.75" Y="33.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAhAAAAIAAAAAIIAAAAAA=</HashCode>
+      <FileName>CoreImpl\Workers\AssemblyTemplateImageWorker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Templates.Worker.TatamiImagesDownloaderWorker">
+    <Position X="4" Y="33.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAIAAAAAAAEAAIAAAAAAAAAAQAIAAAgAAIAAAAAA=</HashCode>
+      <FileName>CoreImpl\Workers\TatamiImagesDownloaderWorker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Templates.Worker.TemplatesWorkers">
+    <Position X="0.75" Y="30" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAABAAAQAAAAAAAACAAIAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Workers\TemplatesWorkers.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="workers" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CastManager.Worker.WorkerBase">
+    <Position X="7.5" Y="30" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQACAAAAAABAAAQAAAAAIAAIAAIAAAAQAAAAA=</HashCode>
+      <FileName>CoreImpl\Workers\WorkerBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.397" />
+  </Class>
+  <Interface Name="CastManager.Templates.ITemplateConfig">
+    <Position X="8.25" Y="17.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAgAAAAAABAAAAIAAPSgAAAAAAIAAQQCAAAEAAg=</HashCode>
+      <FileName>Models\Templates\Config\ITemplateConfig.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Templates.ITemplateConfigs">
+    <Position X="5" Y="17.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAEAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Templates\Configs\ITemplateConfigs.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Client.Device.IDeviceClient">
+    <Position X="13.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQBAAAIEAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Clients\Device\IDeviceClient.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Client.Desktop.IDesktopClient">
+    <Position X="13.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Clients\Desktop\IDesktopClient.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Worker.IWorker">
+    <Position X="4.5" Y="30" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAABAAAQAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Core\IWorker.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

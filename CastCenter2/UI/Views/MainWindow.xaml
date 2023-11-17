@@ -1,0 +1,355 @@
+﻿<Window x:Class="CastManager.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:v="clr-namespace:CastManager.Views"
+        xmlns:vm="clr-namespace:CastManager.ViewModels"
+        xmlns:helper="clr-namespace:CastManager.UI.Helper"
+        Title="MainWindow"
+        Width="950"
+        Height="560"
+        AllowsTransparency="True"
+        Background="Transparent"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None"
+        mc:Ignorable="d"
+        x:Name="m_MainWindow">
+
+    <Window.DataContext>
+        <vm:MainViewModel />
+    </Window.DataContext>
+
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type vm:TemplateViewModel}">
+            <v:TemplatePage />
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type vm:SettingsViewModel}">
+            <v:SettingsPage />
+        </DataTemplate>
+
+        <Storyboard x:Key="sbShowStatusPanel">
+            <DoubleAnimation BeginTime="00:00:00"
+                             Storyboard.TargetName="m_MainWindow"
+                             Storyboard.TargetProperty="(FrameworkElement.Height)"
+                             From="515"
+                             To="560">
+            </DoubleAnimation>
+
+
+        </Storyboard>
+        <Storyboard x:Key="sbSpinnerGo">
+            <DoubleAnimation Storyboard.TargetName="m_RotateImage"
+                             Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)"
+                             From="0"
+                             To="360"
+                             BeginTime="00:00:00.000"
+                             Duration="00:00:02.000"
+                             RepeatBehavior="Forever" />
+        </Storyboard>
+    </Window.Resources>
+
+    <Window.InputBindings>
+        <KeyBinding Key="Enter"
+                    Command="{Binding DeviceConfigCommand}"
+                    Modifiers="Ctrl" />
+    </Window.InputBindings>
+
+    <Border Background="{DynamicResource ColorBrushTop}"
+            BorderThickness="1"
+            CornerRadius="10">
+        <Border.BorderBrush>
+            <LinearGradientBrush StartPoint="0,0"
+                                 EndPoint="1,1">
+                <GradientStop Offset="0"
+                              Color="{DynamicResource ColorButton}" />
+            </LinearGradientBrush>
+        </Border.BorderBrush>
+        <!--  Main Grid  -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="37.82" />
+                <ColumnDefinition Width="52.18" />
+                <ColumnDefinition Width="169*" />
+                <ColumnDefinition Width="116.983" />
+                <ColumnDefinition Width="398*" />
+                <ColumnDefinition Width="166.101" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="105" />
+                <RowDefinition Height="410" />
+                <RowDefinition x:Name="m_MWRow3"
+                               Height="45" />
+            </Grid.RowDefinitions>
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="30"
+                                  Direction="-90"
+                                  ShadowDepth="2"
+                                  Color="{DynamicResource ColorTop}" />
+            </Grid.Effect>
+            <!-- Status -->
+            <Border Grid.Row="2"
+                    Grid.ColumnSpan="6"
+                    Margin="10,0,10,10"
+                    Height="35"
+                    Background="{DynamicResource ColorBrushTop}"
+                    CornerRadius="10">
+                <DockPanel>
+                    <StackPanel Orientation="Horizontal"
+                                HorizontalAlignment="Left">
+                        <Image Width="80"
+                               Height="25"
+                               x:Name="m_RotateImage"
+                               Source="/images/reset_w.png"
+                               RenderTransformOrigin=".5,.5"
+                               Visibility="{Binding SpinnerGo, Converter={StaticResource BoolToHidden}}">
+                            <Image.RenderTransform>
+                                <RotateTransform Angle="0" />
+                            </Image.RenderTransform>
+                        </Image>
+                        <Label x:Name="m_StatusText"
+                               Margin="25,0,0,0"
+                               FontFamily="Fonts/#Saira SemiBold"
+                               FontSize="16"
+                               Foreground="White"
+                               HorizontalAlignment="Stretch"
+                               VerticalAlignment="Center" />
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal"
+                                DockPanel.Dock="Right"
+                                HorizontalAlignment="Right">
+
+                    </StackPanel>
+                </DockPanel>
+            </Border>
+
+            <!--  Left Menu  -->
+            <Border Grid.RowSpan="2"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="2"
+                    Margin="10,10,0,10"
+                    Background="{DynamicResource ColorBrushTop}"
+                    CornerRadius="10">
+                <Grid>
+                    <Grid.ColumnDefinitions />
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <RadioButton Grid.Row="1"
+                                 Grid.Column="0"
+                                 Margin="5"
+                                 Background="Transparent"
+                                 BorderBrush="Transparent"
+                                 IsChecked="{Binding PageNum, Mode=TwoWay, Converter={StaticResource EnumToBool}, ConverterParameter={x:Static vm:PageNum.TemplatePage}}"
+                                 Command="{Binding NavigateCommand}"
+                                 CommandParameter="{x:Static vm:PageNum.TemplatePage}"
+                                 Style="{StaticResource {x:Type ToggleButton}}">
+                        <Image Source="/images/home_white.png"
+                               Stretch="None"
+                               ToolTipService.InitialShowDelay="10">
+                            <Image.ToolTip>
+                                <ToolTip Background="#4D282d33">
+                                    <Border CornerRadius="10">
+                                        <StackPanel>
+                                            <Label Content="{DynamicResource GoHome_Str}"
+                                                   Foreground="White" />
+                                        </StackPanel>
+                                    </Border>
+                                </ToolTip>
+                            </Image.ToolTip>
+                        </Image>
+                    </RadioButton>
+                    <RadioButton Grid.Row="2"
+                                 Grid.Column="0"
+                                 Margin="5"
+                                 Background="Transparent"
+                                 BorderBrush="Transparent"
+                                 IsChecked="{Binding PageNum, Mode=TwoWay, Converter={StaticResource EnumToBool}, ConverterParameter={x:Static vm:PageNum.TemplatePage}}"
+                                 Command="{Binding NavigateCommand}"
+                                 CommandParameter="{x:Static vm:PageNum.SettingsPage}"
+                                 Style="{StaticResource {x:Type ToggleButton}}">
+                        <Image Source="/images/settingsw.png"
+                               Stretch="None"
+                               ToolTipService.InitialShowDelay="10">
+                            <Image.ToolTip>
+                                <ToolTip Background="#4D282d33">
+                                    <Border CornerRadius="10">
+                                        <!-- Add CornerRadius property here -->
+                                        <StackPanel>
+                                            <Label Content="{DynamicResource Settings_Str}"
+                                                   Foreground="White" />
+                                        </StackPanel>
+                                    </Border>
+                                </ToolTip>
+                            </Image.ToolTip>
+                        </Image>
+                    </RadioButton>
+                    <Button x:Name="TemplateButton"
+                            Visibility="Hidden"
+                            Grid.Row="3"
+                            Grid.Column="0"
+                            Background="Transparent"
+                            BorderBrush="Transparent"
+                            Command="{Binding SetTemplateListCommand}"
+                            Style="{StaticResource HomeBtnStyle}">
+                        <Image Source="/images/templatew.png"
+                               Stretch="None"
+                               ToolTipService.InitialShowDelay="10">
+                            <Image.ToolTip>
+                                <ToolTip Background="#4D282d33">
+                                    <Border CornerRadius="10">
+                                        <StackPanel>
+                                            <Label Content="{DynamicResource Settings_Str}"
+                                                   Foreground="White" />
+                                        </StackPanel>
+                                    </Border>
+                                </ToolTip>
+                            </Image.ToolTip>
+                        </Image>
+                    </Button>
+                </Grid>
+            </Border>
+            <!--  Top panel  -->
+            <Border Grid.Column="2"
+                    Grid.ColumnSpan="4"
+                    Margin="10,10,10,10"
+                    Background="{DynamicResource ColorBrushTop}"
+                    CornerRadius="10">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition Width="130" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Image Grid.RowSpan="2"
+                           Grid.Column="0"
+                           Width="55"
+                           Margin="13,3,0,1"
+                           HorizontalAlignment="Left"
+                           Source="/images/64-x-64 LOGO.ico" />
+                    <StackPanel Grid.RowSpan="2"
+                                Grid.Column="2"
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="30" />
+                                <ColumnDefinition Width="30" />
+                                <ColumnDefinition Width="30" />
+                            </Grid.ColumnDefinitions>
+                            <Button x:Name="MinimiseButton"
+                                    Grid.Column="1"
+                                    Margin="0,0,0,0"
+                                    Background="Transparent"
+                                    BorderBrush="Transparent"
+                                    Click="MinimiseButtonClick"
+                                    Style="{StaticResource HomeBtnStyle}">
+                                <Image Width="32"
+                                       Height="32"
+                                       Source="/images/minimize.png"
+                                       Stretch="None">
+                                    <Image.ToolTip>
+                                        <ToolTip Background="#4D282d33">
+                                            <Border CornerRadius="10">
+                                                <StackPanel>
+                                                    <Label Content="{DynamicResource Minimize_Str}"
+                                                           Foreground="White" />
+                                                </StackPanel>
+                                            </Border>
+                                        </ToolTip>
+                                    </Image.ToolTip>
+                                </Image>
+                            </Button>
+                            <Button Grid.Column="2"
+                                    Margin="0,0,0,0"
+                                    Background="Transparent"
+                                    BorderBrush="Transparent"
+                                    Command="{Binding CloseAppCommand}"
+                                    Style="{StaticResource HomeBtnStyle}"
+                                    Visibility="Visible">
+                                <Image Source="/images/shutdown_mo.png"
+                                       Stretch="None">
+                                    <Image.ToolTip>
+                                        <ToolTip Background="#4D282d33">
+                                            <Border CornerRadius="10">
+                                                <StackPanel>
+                                                    <Label Content="{DynamicResource CloseProgram_Str}"
+                                                           Foreground="White" />
+                                                </StackPanel>
+                                            </Border>
+                                        </ToolTip>
+                                    </Image.ToolTip>
+                                </Image>
+                            </Button>
+                            <Button x:Name="theme"
+                                    Grid.Column="0"
+                                    Background="Transparent"
+                                    BorderBrush="Transparent"
+                                    Command="{Binding ThemeBtnCommand}"
+                                    Style="{StaticResource HomeBtnStyle}">
+                                <Image Source="/images/themew.png"
+                                       Stretch="None">
+                                    <Image.ToolTip>
+                                        <ToolTip Background="#4D282d33">
+                                            <Border CornerRadius="10">
+                                                <StackPanel>
+                                                    <Label Content="{DynamicResource ThemeSelect_Str}"
+                                                           Foreground="White" />
+                                                </StackPanel>
+                                            </Border>
+                                        </ToolTip>
+                                    </Image.ToolTip>
+                                </Image>
+                            </Button>
+                        </Grid>
+                    </StackPanel>
+                    <Label Grid.RowSpan=" 2"
+                           Grid.ColumnSpan="2"
+                           Margin="73,0,0,0"
+                           HorizontalAlignment="Left"
+                           VerticalAlignment="Center"
+                           Content="Cast Manager"
+                           FontFamily="Fonts/#Saira SemiBold"
+                           FontSize="22"
+                           Foreground="White"
+                           RenderTransformOrigin="0.319,0.487" />
+                    <TextBlock Grid.RowSpan="2"
+                               Grid.ColumnSpan="2"
+                               Margin="236,22,0,0"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               FontSize="16"
+                               Foreground="#FFF3E7E7"
+                               Text="{Binding LocalIp}"
+                               DataContext="{StaticResource InfoViewModel}" />
+                    <TextBlock x:Name="Version"
+                               Grid.Row="1"
+                               Grid.Column="0"
+                               Margin="81,10,0,0"
+                               HorizontalAlignment="Left"
+                               VerticalAlignment="Top"
+                               FontSize="12"
+                               Foreground="White"
+                               Text="{Binding AssemblyVersion}"
+                               DataContext="{StaticResource InfoViewModel}" />
+                </Grid>
+            </Border>
+            <!--  Centr panel  -->
+            <ContentPresenter Grid.Row="1"
+                              Grid.Column="2"
+                              Grid.ColumnSpan="4"
+                              Margin="10,0,10,10"
+                              Content="{Binding CurrentPage}" />
+        </Grid>
+    </Border>
+</Window>

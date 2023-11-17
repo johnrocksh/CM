@@ -1,0 +1,303 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows10.0.22000.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>disable</Nullable>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<SatelliteResourceLanguages>en</SatelliteResourceLanguages>
+
+		<RunWixToolsOutOfProc Condition=" '$(PROCESSOR_ARCHITECTURE)'!='x86' ">true</RunWixToolsOutOfProc>
+		<Platforms>AnyCPU</Platforms>
+
+		<UseWPF>true</UseWPF>
+		<ApplicationIcon>images\LOGO.ico</ApplicationIcon>
+		<ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+		<AssemblyName>CastManager</AssemblyName>
+		<RootNamespace>CastManager</RootNamespace>
+		<Company>$(Authors)</Company>
+		<PackageIcon>LOGO.ico</PackageIcon>
+		<Deterministic>false</Deterministic>
+		<AssemblyVersion>1.0.1.*</AssemblyVersion>
+		<FileVersion>1.0.1.*</FileVersion>
+		<Version>2.0.1</Version>
+		<GenerateDocumentationFile>False</GenerateDocumentationFile>
+		<Configurations>Debug;Release;Mock</Configurations>
+		<IsPublishable>False</IsPublishable>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Remove="images - Copy\**" />
+		<Compile Remove="Models\Desktop\**" />
+		<Compile Remove="UI\Views\Menu\**" />
+		<EmbeddedResource Remove="images - Copy\**" />
+		<EmbeddedResource Remove="Models\Desktop\**" />
+		<EmbeddedResource Remove="UI\Views\Menu\**" />
+		<None Remove="images - Copy\**" />
+		<None Remove="Models\Desktop\**" />
+		<None Remove="UI\Views\Menu\**" />
+		<Page Remove="images - Copy\**" />
+		<Page Remove="Models\Desktop\**" />
+		<Page Remove="UI\Views\Menu\**" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Compile Remove="CoreImpl\Workers\Lookup\Addresses\LocalAddresses.cs" />
+	  <Compile Remove="CoreImpl\Workers\Lookup\RoundRobin\RoundRobinTable.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Remove="images\128-x-128 LOGO.ico" />
+		<None Remove="images\24-x-24 LOGO.ico" />
+		<None Remove="images\24x24Logo.ico" />
+		<None Remove="images\256-x-256 LOGO.ico" />
+		<None Remove="images\32-x-32 LOGO.ico" />
+		<None Remove="images\48-x-48 LOGO.ico" />
+		<None Remove="images\64-x-64 LOGO.ico" />
+		<None Remove="images\96-x-96 LOGO.ico" />
+		<None Remove="images\addb.png" />
+		<None Remove="images\addimage.png" />
+		<None Remove="images\addw.png" />
+		<None Remove="images\backbtn.png" />
+		<None Remove="images\backbtnb.png" />
+		<None Remove="images\backbtnw.png" />
+		<None Remove="images\backgroundmain.jpg" />
+		<None Remove="images\deleteb.png" />
+		<None Remove="images\deletew.png" />
+		<None Remove="images\desktop.png" />
+		<None Remove="images\desktopdisconnected.png" />
+		<None Remove="images\editb.png" />
+		<None Remove="images\editw.png" />
+		<None Remove="images\home_a.png" />
+		<None Remove="images\home_b.png" />
+		<None Remove="images\home_bb.png" />
+		<None Remove="images\home_black.png" />
+		<None Remove="images\home_white.png" />
+		<None Remove="images\HorizontalTemplate.png" />
+		<None Remove="images\HorizontalTemplatebig.png" />
+		<None Remove="images\Icons\ip.png" />
+		<None Remove="images\Icons\ok.png" />
+		<None Remove="images\Icons\warning_error.png" />
+		<None Remove="images\ip.png" />
+		<None Remove="images\loading.gif" />
+		<None Remove="images\mainview.png" />
+		<None Remove="images\minimize.png" />
+		<None Remove="images\mock.png" />
+		<None Remove="images\notactual_config.png" />
+		<None Remove="images\okb.png" />
+		<None Remove="images\okw.png" />
+		<None Remove="images\picaster.png" />
+		<None Remove="images\picasterreset.png" />
+		<None Remove="images\picasterresetb.png" />
+		<None Remove="images\picasterresetw.png" />
+		<None Remove="images\plus.png" />
+		<None Remove="images\refresh_black.png" />
+		<None Remove="images\refresh_white.png" />
+		<None Remove="images\reset_b.png" />
+		<None Remove="images\reset_w.png" />
+		<None Remove="images\savebtnb.png" />
+		<None Remove="images\savebtnw.png" />
+		<None Remove="images\settingsb.png" />
+		<None Remove="images\settingsw.png" />
+		<None Remove="images\shutdown_def.gif" />
+		<None Remove="images\shutdown_mo.png" />
+		<None Remove="images\tablo.png" />
+		<None Remove="images\templatecenterw.png" />
+		<None Remove="images\templategrid.png" />
+		<None Remove="images\templatehorizontalw.png" />
+		<None Remove="images\TemplateList.png" />
+		<None Remove="images\templateverticalb.png" />
+		<None Remove="images\templateverticalw.png" />
+		<None Remove="images\templatew.png" />
+		<None Remove="images\template_imagew.png" />
+		<None Remove="images\themeb.png" />
+		<None Remove="images\themew.png" />
+		<None Remove="images\UrlCastInfo.png" />
+		<None Remove="images\UrlCurrent.png" />
+		<None Remove="images\VerticalTemplatebig.png" />
+		<None Remove="images\wifia.png" />
+		<None Remove="images\wifib.png" />
+		<None Remove="CoreImpl\Clients\Device\ClientFactory" />
+		<None Remove="UI\Views\LOGO.ico" />
+		<None Remove="Resources\LOGO.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Page Remove="StringsResources\StringsRu.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="images\128-x-128 LOGO.ico" />
+		<Resource Include="images\24-x-24 LOGO.ico" />
+		<Resource Include="images\24x24Logo.ico" />
+		<Resource Include="images\256-x-256 LOGO.ico" />
+		<Resource Include="images\32-x-32 LOGO.ico" />
+		<Resource Include="images\48-x-48 LOGO.ico" />
+		<Resource Include="images\64-x-64 LOGO.ico" />
+		<Resource Include="images\96-x-96 LOGO.ico" />
+		<Resource Include="images\addb.png" />
+		<Resource Include="images\addimage.png" />
+		<Resource Include="images\addw.png" />
+		<Resource Include="images\backbtnb.png" />
+		<Resource Include="images\backbtnw.png" />
+		<Resource Include="images\deleteb.png" />
+		<Resource Include="images\deletew.png" />
+		<Resource Include="images\editb.png" />
+		<Resource Include="images\editw.png" />
+		<Resource Include="images\home_black.png" />
+		<Resource Include="images\home_white.png" />
+		<Resource Include="images\HorizontalTemplate.png" />
+		<Resource Include="images\Icons\ip.png" />
+		<Resource Include="images\Icons\ok.png" />
+		<Resource Include="images\Icons\warning_error.png" />
+		<Resource Include="images\ip.png" />
+		<Resource Include="images\Logo\128-x-128 LOGO.ico" />
+		<Resource Include="images\Logo\24-x-24 LOGO.ico" />
+		<Resource Include="images\Logo\256-x-256 LOGO.ico" />
+		<Resource Include="images\Logo\32-x-32 LOGO.ico" />
+		<Resource Include="images\Logo\48-x-48 LOGO.ico" />
+		<Resource Include="images\Logo\64-x-64 LOGO.ico" />
+		<Resource Include="images\Logo\96-x-96 LOGO.ico" />
+		<Resource Include="images\Icons\addb.png" />
+		<Resource Include="images\Icons\addw.png" />
+		<Resource Include="images\backgroundmain.jpg" />
+		<Resource Include="images\Icons\editb.png" />
+		<Resource Include="images\Icons\editw.png" />
+		<Resource Include="images\HorizontalTemplatebig.png" />
+		<SplashScreen Include="images\LOGO.ico">
+		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</SplashScreen>
+		<Resource Include="images\Icons\picasterresetb.png" />
+		<Resource Include="images\Icons\picasterresetw.png" />
+		<Resource Include="images\Icons\plus.png" />
+		<Resource Include="images\Icons\refresh_white.png" />
+		<Resource Include="images\Icons\reset_b.png" />
+		<Content Include="StringsResources\StringsRu.xaml">
+			<CopyToOutputDirectory>Always</CopyToOutputDirectory>
+		</Content>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="images\Icons\backbtnb.png" />
+		<Resource Include="images\Icons\backbtnw.png" />
+		<Resource Include="images\Icons\deleteb.png" />
+		<Resource Include="images\Icons\deletew.png" />
+		<Resource Include="images\desktopdisconnected.png" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="CommonServiceLocator" Version="2.0.7" />
+		<PackageReference Include="CommunityToolkit.WinUI.UI" Version="7.1.2" />
+		<PackageReference Include="ManagedNativeWifi" Version="2.5.0" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.1" />
+		<PackageReference Include="MvvmLightLibsStd10" Version="5.4.1.1" />
+		<PackageReference Include="Nancy.JsonPatch" Version="0.2.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="NLog" Version="5.1.4" />
+		<PackageReference Include="NLog.Config" Version="4.7.15" />
+		<PackageReference Include="NLog.Schema" Version="5.1.4" />
+		<PackageReference Include="SimpleWifi.netstandard" Version="2.0.0" />
+		<PackageReference Include="WiX.Toolset" Version="3.9.1208" />
+		<PackageReference Include="WixMsiToolset" Version="3.11.0" />
+		<PackageReference Include="Zeroconf" Version="3.6.11" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Reference Include="GalaSoft.MvvmLight">
+			<HintPath>..\packages\MvvmLightLibs.5.4.1.1\lib\xamarin.ios10\GalaSoft.MvvmLight.dll</HintPath>
+		</Reference>
+		<Reference Include="System.Reactive">
+			<HintPath>..\packages\System.Reactive.5.0.0\lib\net5.0\System.Reactive.dll</HintPath>
+		</Reference>
+		<Reference Include="Zeroconf">
+			<HintPath>..\packages\Zeroconf.3.4.2\lib\net46\Zeroconf.dll</HintPath>
+		</Reference>
+	</ItemGroup>
+
+	<ItemGroup>
+		<Resource Include="images\desktop.png" />
+		<Resource Include="images\mainview.png" />
+		<Resource Include="images\minimize.png" />
+		<Resource Include="images\mock.png" />
+		<Resource Include="images\notactual_config.png" />
+		<Resource Include="images\Icons\home_black.png" />
+		<Resource Include="images\Icons\home_white.png" />
+		<Resource Include="images\Icons\okb.png" />
+		<Resource Include="images\Icons\okw.png" />
+		<Resource Include="images\Icons\picaster.png" />
+		<Resource Include="images\Icons\refresh_black.png" />
+		<Resource Include="images\Icons\reset_w.png" />
+		<Resource Include="images\Icons\savebtnb.png" />
+		<Resource Include="images\Icons\savebtnw.png" />
+		<Resource Include="images\Icons\settingsb.png" />
+		<Resource Include="images\Icons\settingsw.png" />
+		<Resource Include="images\Icons\shutdown_mo.png" />
+		<Resource Include="images\okb.png" />
+		<Resource Include="images\okw.png" />
+		<Resource Include="images\picaster.png" />
+		<Resource Include="images\picasterresetb.png" />
+		<Resource Include="images\picasterresetw.png" />
+		<Resource Include="images\plus.png" />
+		<Resource Include="images\refresh_black.png" />
+		<Resource Include="images\refresh_white.png" />
+		<Resource Include="images\reset_b.png" />
+		<Resource Include="images\reset_w.png" />
+		<Resource Include="images\savebtnb.png" />
+		<Resource Include="images\savebtnw.png" />
+		<Resource Include="images\settingsb.png" />
+		<Resource Include="images\settingsw.png" />
+		<Resource Include="images\shutdown_mo.png" />
+		<Resource Include="images\tablo.png" />
+		<Resource Include="images\templatecenterw.png" />
+		<Resource Include="images\templategrid.png" />
+		<Resource Include="images\templatehorizontalw.png" />
+		<Resource Include="images\TemplateList.png" />
+		<Resource Include="images\templateverticalb.png" />
+		<Resource Include="images\templateverticalw.png" />
+		<Resource Include="images\templatew.png" />
+		<Resource Include="images\template_imagew.png" />
+		<Resource Include="images\themeb.png" />
+		<Resource Include="images\themew.png" />
+		<Resource Include="images\VerticalTemplatebig.png" />
+		<Resource Include="images\Icons\wifia.png" />
+		<Resource Include="images\Icons\wifib.png" />
+		<Resource Include="images\wifia.png" />
+		<Resource Include="images\wifib.png" />
+		<Resource Include="Resources\LOGO.ico" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include="CoreImpl\Clients\ClientsFactory.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<Compile Update="MVVM\View\TemplatesTypes\OneImageTemplate.xaml.cs">
+		  <SubType>Code</SubType>
+		</Compile>
+		<Compile Update="Properties\Resources.Designer.cs">
+			<DesignTime>True</DesignTime>
+			<AutoGen>True</AutoGen>
+			<DependentUpon>Resources.resx</DependentUpon>
+		</Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+		<EmbeddedResource Update="Properties\Resources.resx">
+			<Generator>ResXFileCodeGenerator</Generator>
+			<LastGenOutput>Resources.Designer.cs</LastGenOutput>
+		</EmbeddedResource>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="LOGO.ico">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	  <None Update="nlog.config">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+</Project>

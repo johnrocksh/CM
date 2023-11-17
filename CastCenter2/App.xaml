@@ -1,0 +1,45 @@
+﻿<Application
+    x:Class="CastManager.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:CastManager"
+    xmlns:converters="clr-namespace:CastManager.UI.Converters"    
+    xmlns:v="clr-namespace:CastManager.Views"
+    xmlns:vm="clr-namespace:CastManager.ViewModels"
+    StartupUri="UI/Views/MainWindow.xaml">
+
+    <Application.Resources>
+        <ResourceDictionary>
+            <BooleanToVisibilityConverter x:Key="BoolToVis" />
+            <converters:BoolToHiddenConverter x:Key="BoolToHidden" />
+            <converters:EnumToBoolConverter x:Key="EnumToBool" />
+            <converters:ImageConverter x:Key="ImageConverter" />
+            <vm:InfoViewModel x:Key="InfoViewModel"/>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="StringsResources/StringsRu.xaml" />
+                <ResourceDictionary Source="UI\Styles\CardImgStl.xaml" />
+                <ResourceDictionary Source="UI\Styles\ImageBrushs.xaml" />
+                <ResourceDictionary Source="UI\Styles\OpenImageFile.xaml" />
+                <ResourceDictionary Source="UI\Styles\TemplateMenuStyle.xaml" />
+                <ResourceDictionary Source="UI\Styles\WifiButtonStyle.xaml" />
+                <ResourceDictionary Source="UI\Styles\WifiLoginStyle.xaml" />
+                <ResourceDictionary Source="UI\Styles\WifiPasswordStyle.xaml" />
+                <ResourceDictionary Source="UI\Styles\Themes\ClassicSkin.xaml" />
+                <ResourceDictionary Source="UI\Styles\Buttons\RefreshTatamiStyle.xaml" />
+                <ResourceDictionary Source="UI\Styles\Buttons\ResetPicasterStyle.xaml" />
+                <ResourceDictionary Source="UI\Styles\Buttons\SaveButtonStyle.xaml" />
+                <ResourceDictionary Source="UI\Styles\Buttons\AddConfigButtonStyle.xaml" />
+                <ResourceDictionary Source="UI\Styles\Buttons\BackButtonStyle.xaml" />
+                <ResourceDictionary Source="UI\Styles\Buttons\CloseAppStyle.xaml" />
+                <ResourceDictionary Source="UI\Styles\Buttons\DefaultButtonStyle.xaml" />
+                <ResourceDictionary Source="UI\Styles\Buttons\DeleteConfig.xaml" />
+                <ResourceDictionary Source="UI\Styles\Buttons\DeviceSettingsStyle.xaml" />
+                <ResourceDictionary Source="UI\Styles\Buttons\EditButtonStyle.xaml" />
+                <ResourceDictionary Source="UI\Styles\Buttons\GoHomeStyle.xaml" />
+                <ResourceDictionary Source="UI\Styles\Buttons\HomeBtnStyle.xaml" />
+                <ResourceDictionary Source="UI\Styles\Buttons\PatchButton.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Application.Resources>
+
+</Application>

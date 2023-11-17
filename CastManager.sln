@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CastManager", "CastCenter2\CastManager.csproj", "{EEF836EB-0455-492C-864F-3C006A496D26}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D0EF5BCC-8F8C-4995-B7B7-018BCD5F8568}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CastManager.Tests", "Tests\CastManager.Tests.csproj", "{43EA098E-99F8-403E-8892-1B000CCDB899}"
+EndProject
+Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "WixCastManagerSetup", "WixCastManagerSetup\WixCastManagerSetup.wixproj", "{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Mock|Any CPU = Mock|Any CPU
+		Mock|x64 = Mock|x64
+		Mock|x86 = Mock|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EEF836EB-0455-492C-864F-3C006A496D26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEF836EB-0455-492C-864F-3C006A496D26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEF836EB-0455-492C-864F-3C006A496D26}.Debug|x64.ActiveCfg = Debug|x64
+		{EEF836EB-0455-492C-864F-3C006A496D26}.Debug|x64.Build.0 = Debug|x64
+		{EEF836EB-0455-492C-864F-3C006A496D26}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EEF836EB-0455-492C-864F-3C006A496D26}.Debug|x86.Build.0 = Debug|Any CPU
+		{EEF836EB-0455-492C-864F-3C006A496D26}.Mock|Any CPU.ActiveCfg = Mock|Any CPU
+		{EEF836EB-0455-492C-864F-3C006A496D26}.Mock|Any CPU.Build.0 = Mock|Any CPU
+		{EEF836EB-0455-492C-864F-3C006A496D26}.Mock|x64.ActiveCfg = Mock|Any CPU
+		{EEF836EB-0455-492C-864F-3C006A496D26}.Mock|x64.Build.0 = Mock|Any CPU
+		{EEF836EB-0455-492C-864F-3C006A496D26}.Mock|x86.ActiveCfg = Mock|Any CPU
+		{EEF836EB-0455-492C-864F-3C006A496D26}.Mock|x86.Build.0 = Mock|Any CPU
+		{EEF836EB-0455-492C-864F-3C006A496D26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEF836EB-0455-492C-864F-3C006A496D26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEF836EB-0455-492C-864F-3C006A496D26}.Release|x64.ActiveCfg = Release|x64
+		{EEF836EB-0455-492C-864F-3C006A496D26}.Release|x64.Build.0 = Release|x64
+		{EEF836EB-0455-492C-864F-3C006A496D26}.Release|x86.ActiveCfg = Release|Any CPU
+		{EEF836EB-0455-492C-864F-3C006A496D26}.Release|x86.Build.0 = Release|Any CPU
+		{43EA098E-99F8-403E-8892-1B000CCDB899}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{43EA098E-99F8-403E-8892-1B000CCDB899}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{43EA098E-99F8-403E-8892-1B000CCDB899}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{43EA098E-99F8-403E-8892-1B000CCDB899}.Debug|x64.Build.0 = Debug|Any CPU
+		{43EA098E-99F8-403E-8892-1B000CCDB899}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{43EA098E-99F8-403E-8892-1B000CCDB899}.Debug|x86.Build.0 = Debug|Any CPU
+		{43EA098E-99F8-403E-8892-1B000CCDB899}.Mock|Any CPU.ActiveCfg = Mock|Any CPU
+		{43EA098E-99F8-403E-8892-1B000CCDB899}.Mock|Any CPU.Build.0 = Mock|Any CPU
+		{43EA098E-99F8-403E-8892-1B000CCDB899}.Mock|x64.ActiveCfg = Mock|Any CPU
+		{43EA098E-99F8-403E-8892-1B000CCDB899}.Mock|x64.Build.0 = Mock|Any CPU
+		{43EA098E-99F8-403E-8892-1B000CCDB899}.Mock|x86.ActiveCfg = Mock|Any CPU
+		{43EA098E-99F8-403E-8892-1B000CCDB899}.Mock|x86.Build.0 = Mock|Any CPU
+		{43EA098E-99F8-403E-8892-1B000CCDB899}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{43EA098E-99F8-403E-8892-1B000CCDB899}.Release|Any CPU.Build.0 = Release|Any CPU
+		{43EA098E-99F8-403E-8892-1B000CCDB899}.Release|x64.ActiveCfg = Release|Any CPU
+		{43EA098E-99F8-403E-8892-1B000CCDB899}.Release|x64.Build.0 = Release|Any CPU
+		{43EA098E-99F8-403E-8892-1B000CCDB899}.Release|x86.ActiveCfg = Release|Any CPU
+		{43EA098E-99F8-403E-8892-1B000CCDB899}.Release|x86.Build.0 = Release|Any CPU
+		{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}.Debug|Any CPU.Build.0 = Debug|x86
+		{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}.Debug|x64.ActiveCfg = Debug|x86
+		{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}.Debug|x64.Build.0 = Debug|x86
+		{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}.Debug|x86.ActiveCfg = Debug|x86
+		{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}.Debug|x86.Build.0 = Debug|x86
+		{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}.Mock|Any CPU.ActiveCfg = Debug|x86
+		{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}.Mock|Any CPU.Build.0 = Debug|x86
+		{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}.Mock|x64.ActiveCfg = Debug|x86
+		{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}.Mock|x64.Build.0 = Debug|x86
+		{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}.Mock|x86.ActiveCfg = Debug|x86
+		{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}.Mock|x86.Build.0 = Debug|x86
+		{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}.Release|Any CPU.ActiveCfg = Release|x86
+		{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}.Release|Any CPU.Build.0 = Release|x86
+		{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}.Release|x64.ActiveCfg = Release|x86
+		{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}.Release|x64.Build.0 = Release|x86
+		{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}.Release|x86.ActiveCfg = Release|x86
+		{4CF62433-3111-4A23-8A0F-AA485BDD8FD0}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4A941C6A-9C0B-4E9A-8925-24641CA8F122}
+	EndGlobalSection
+EndGlobal

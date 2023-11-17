@@ -1,0 +1,63 @@
+﻿<UserControl
+    x:Class="CastManager.Views.TemplateMenu"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:tp="clr-namespace:CastManager.Templates"
+    xmlns:v="clr-namespace:CastManager.Views"
+    xmlns:vm="clr-namespace:CastManager.ViewModels"
+    Width="225"
+    Height="40"
+    mc:Ignorable="d">
+   
+    <StackPanel>
+        <StackPanel Orientation="Horizontal">
+            <RadioButton
+                IsChecked="{Binding CurentTemplatePageNum, Mode=TwoWay, Converter={StaticResource EnumToBool}, ConverterParameter={x:Static tp:TemplatePageNum.Orign}}"
+                Style="{StaticResource {x:Type ToggleButton}}" >
+                <Image
+                    Width="35"
+                    Height="35"
+                    Source="/images/mainview.png"
+                    Stretch="None" />
+            </RadioButton>
+            <RadioButton
+                IsChecked="{Binding CurentTemplatePageNum, Converter={StaticResource EnumToBool}, ConverterParameter={x:Static tp:TemplatePageNum.Horizontal}}"
+                Style="{StaticResource {x:Type ToggleButton}}">
+                <Image
+                    Width="35"
+                    Height="35"
+                    Source="/images/templatehorizontalw.png"
+                    Stretch="None" />
+            </RadioButton>
+            <RadioButton
+                IsChecked="{Binding CurentTemplatePageNum, Converter={StaticResource EnumToBool}, ConverterParameter={x:Static tp:TemplatePageNum.Vertical}}"
+                Style="{StaticResource {x:Type ToggleButton}}">
+                <Image
+                    Width="35"
+                    Height="35"
+                    Source="/images/templateverticalw.png"
+                    Stretch="None" />
+            </RadioButton>
+            <RadioButton
+                IsChecked="{Binding CurentTemplatePageNum, Converter={StaticResource EnumToBool}, ConverterParameter={x:Static tp:TemplatePageNum.Grid}}"
+                Style="{StaticResource {x:Type ToggleButton}}">
+                <Image
+                    Width="35"
+                    Height="35"
+                    Source="/images/templategrid.png"
+                    Stretch="None" />
+            </RadioButton>
+            <RadioButton
+                IsChecked="{Binding CurentTemplatePageNum, Converter={StaticResource EnumToBool}, ConverterParameter={x:Static tp:TemplatePageNum.ImageAdv}}"
+                Style="{StaticResource {x:Type ToggleButton}}">
+                <Image
+                    Width="35"
+                    Height="35"
+                    Source="/images/template_imagew.png"
+                    Stretch="None" />
+            </RadioButton>
+        </StackPanel>
+    </StackPanel>
+</UserControl>

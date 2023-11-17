@@ -1,0 +1,87 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:System;assembly=mscorlib">
+    <s:String x:Key="Select_NetworkStr">Выберите сеть</s:String>
+    <s:String x:Key="Select_Tablo_Str">Выберите Табло</s:String>
+    <s:String x:Key="AddConfig_Str">Добавить трансляцию</s:String>
+    <s:String x:Key="EditUrlConfig_Str">Редактировать адресс трансляции</s:String>
+    <s:String x:Key="HandModeTablo_Str">Автономный режим Табло</s:String>
+    <s:String x:Key="HandModeTamami_Str">Автономный режим Татами</s:String>
+    <s:String x:Key="Configuration_SavedStr">Ваша конфигурация сохранена на устройстве!</s:String>
+    <s:String x:Key="Version_Str">Версия:</s:String>
+    <s:String x:Key="IPAddress_Str">IP Адрес:</s:String>
+    <s:String x:Key="CloseProgram_Str">Закрыть</s:String>
+    <s:String x:Key="Minimize_Str">Свернуть</s:String>
+    <s:String x:Key="GoHome_Str">На Главную</s:String>
+    <s:String x:Key="RefreshTatami_Str">Обновить Татами</s:String>
+    <s:String x:Key="RefreshTablo_Str">Обновить</s:String>
+    <s:String x:Key="RefreshAccessPoints_Str">Обновить</s:String>
+    <s:String x:Key="AccessPointSearch_Str">Найти точку доступа</s:String>
+    <s:String x:Key="AccessPointMode_Str">Вернуть в точку доступа</s:String>
+    <s:String x:Key="Settings_Str">Настройки</s:String>
+    <s:String x:Key="Back_Str">Назад</s:String>
+    <s:String x:Key="Password_Str">Пароль:</s:String>
+    <s:String x:Key="Wifi_Network_Str">WIFI Сеть:</s:String>
+    <s:String x:Key="Tatami_Str">Татами</s:String>
+    <s:String x:Key="Tablo_Str">Табло</s:String>
+    <s:String x:Key="Connect_STR">Соединить</s:String>
+    <s:String x:Key="AccessPoint_Str">Точка доступа</s:String>
+    <s:String x:Key="Ready_Str">Готово</s:String>
+    
+    <!--PiCaster-->
+    <s:String x:Key="EnterPassword_Str">Введите пароль</s:String>
+    <s:String x:Key="Searching_Str">Поиск</s:String>
+    <s:String x:Key="DeviceFound_Str">Точка доступа найдена</s:String>
+    <s:String x:Key="Registration_Str">Регистрация</s:String>
+    <s:String x:Key="Connecting_Str">Соединение</s:String>
+
+    <s:String x:Key="NotFound_Str">Точки доступа не обнаружены</s:String>
+    <s:String x:Key="WriteWifiError_Str">Ошибка записи WifiSettings на устройство</s:String>
+    <s:String x:Key="ConnectToPicasterError_Str">Не смогли подключиться к сети Picaster</s:String>
+
+    <s:String x:Key="Delete_Str">Удалить</s:String>
+    <s:String x:Key="Warning_Str">Предупреждение!</s:String>
+    <s:String x:Key="Save_ConfigurationStr">Сохранить конфигурацию</s:String>
+    <s:String x:Key="Edit_Str">Редактировать</s:String>
+    <s:String x:Key="EnterIp_Str">Введит IP аддресс или Хост :</s:String>
+    <s:String x:Key="Ok_Str">OK</s:String>
+    <s:String x:Key="DeviceName_Str">Имя устройства:</s:String>
+    <s:String x:Key="DesktopFound_Str">Татами найдено</s:String>
+    <s:String x:Key="Question_Str">Вопрос</s:String>
+    <s:String x:Key="Information_Str">Информация</s:String>
+    <s:String x:Key="AccessPointMessageBox_Str">Хотите  перевести выбранное устройство в точку доступа?</s:String>
+    <s:String x:Key="Configuration_Saved_Str">Желаете сохранить текущую конфигурацию?</s:String>
+    <s:String x:Key="Delete_selected_configuration_Str">Удалить выбранную конфигурацию!</s:String>
+    <s:String x:Key="ConnectionNotEstablished_Str">Попытка установить соединение к выбранной WIFI сети была безуспешной. Попробуйте еще раз!!</s:String>
+    <s:String x:Key="Don'tSelectedConfiguration_Str">Вы не выбрали конфигурацию для удаления!</s:String>
+    <s:String x:Key="ThemeSelect_Str">Выбрать тему</s:String>
+    <s:String x:Key="Configuration_NotSelectedStr">Конфигурация не выбрана</s:String>
+    <s:String x:Key="EditTemplate_Str">XAML</s:String>
+    <s:String x:Key="CastManager_Str">Cast Manager</s:String>
+    <s:String x:Key="OpenImage_Str">Открыть</s:String>
+    <s:String x:Key="PathToFile_Str">Путь:</s:String>
+    <s:String x:Key="Expected_Str">Ожидается:</s:String>
+    <s:String x:Key="Wrng_TabloIsNotRunning">Трансляция не запущена у выбранного оператора!</s:String>
+
+    <s:String x:Key="NoneDeviceFound_Str">Ни одного устройства не найдено</s:String>
+    <s:String x:Key="NoneDeviceCheckboxed_Str">Ни одно устройство не отмечено флажком</s:String>
+
+    <s:String x:Key="ConfigSaved_Str">Конфигурация сохранена</s:String>
+    <s:String x:Key="ConfigSaveFail_Str">Ошибка сохранения конфигурации</s:String>
+    <s:String x:Key="SearchingServices_Desktops_Str">Поиск сервисов оператора</s:String>
+    <s:String x:Key="SearchingServices_Devices_Str">Поиск сервисов устройств</s:String>
+    <s:String x:Key="LookupsFinished_Devices_Str">Поиск сервисов устройств завершён</s:String>
+    <s:String x:Key="LookupsFinished_Desktop_Str">Поиск сервисов оператора завершён</s:String>
+    <s:String x:Key="PleaseSelectTheTablo_Str">Табло не выбрано</s:String>
+    <s:String x:Key="NoneDeviceSelected_Str">Табло не выбрано</s:String>
+    <s:String x:Key="SavingConfig_Str">Сохранение</s:String>
+    <s:String x:Key="SavedConfigDone_Str">Сохранение завершено успешно</s:String>
+    <s:String x:Key="SavedConfigFailed_Str">Не удалось сохранить</s:String>
+    <s:String x:Key="SetDeviceToAccessPointMode_Str">Переводим устройство в режим точки доступа</s:String>
+    <s:String x:Key="Finished_Str">Завершено</s:String>
+    <s:String x:Key="SearchingServices_Str">Поиск сервисов</s:String>
+    
+    <!--HandMode-->
+
+    <s:String x:Key="YouEnteredAnIncorrectIPAddress_Str">Вы ввели не правильный IP-адрес</s:String>
+</ResourceDictionary>

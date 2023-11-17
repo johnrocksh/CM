@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" InitialTargets="EnsureWixToolsetInstalled" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>3.10</ProductVersion>
+    <ProjectGuid>{4cf62433-3111-4a23-8a0f-aa485bdd8fd0}</ProjectGuid>
+    <SchemaVersion>2.0</SchemaVersion>
+    <OutputName>CastManager</OutputName>
+    <OutputType>Package</OutputType>
+    <Name>WixCastManagerSetup</Name>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+    <DefineConstants>Debug</DefineConstants>
+    <DefineConstants>HarvestPath=...\Deploy</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <OutputPath>bin\$(Configuration)\</OutputPath>
+    <IntermediateOutputPath>obj\$(Configuration)\</IntermediateOutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ComponentsGenerated.wxs" />
+    <Compile Include="My_InstallDir.wxs" />
+    <Compile Include="My_InstallDirDlg.wxs" />
+    <Compile Include="Product.wxs" />
+    <!-- This is the Heat created one -->
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CastCenter2\CastManager.csproj">
+      <Name>CastManager</Name>
+      <Project>{eef836eb-0455-492c-864f-3c006a496d26}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WixExtension Include="WixUtilExtension">
+      <HintPath>$(WixExtDir)\WixUtilExtension.dll</HintPath>
+      <Name>WixUtilExtension</Name>
+    </WixExtension>
+    <WixExtension Include="WixUIExtension">
+      <HintPath>$(WixExtDir)\WixUIExtension.dll</HintPath>
+      <Name>WixUIExtension</Name>
+    </WixExtension>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WixCastManagerSetup.wixproj" />
+  </ItemGroup>
+  <PropertyGroup>
+    <WixToolPath>C:\Program Files (x86)\WiX Toolset v3.11\bin\</WixToolPath>
+    <WixTargetsPath>C:\Program Files (x86)\MSBuild\Microsoft\WiX\v3.x\wix.targets</WixTargetsPath>
+    <WixTasksPath>C:\Program Files (x86)\WiX Toolset v3.11\bin\WixTasks.dll</WixTasksPath>
+  </PropertyGroup>
+  <Import Project="$(WixTargetsPath)" Condition=" '$(WixTargetsPath)' != '' " />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets" Condition=" '$(WixTargetsPath)' == '' AND Exists('$(MSBuildExtensionsPath32)\Microsoft\WiX\v3.x\Wix.targets') " />
+  <Target Name="EnsureWixToolsetInstalled" Condition=" '$(WixTargetsImported)' != 'true' ">
+    <Error Text="The WiX Toolset v3.11 build tools must be installed to build this project. To download the WiX Toolset, see https://wixtoolset.org/releases/v3.11/stable" />
+  </Target>
+  <Target Name="BeforeBuild">
+    <Exec Command="dotnet publish ..\CastCenter2\CastManager.csproj -c $(Configuration)" />
+    <!-- Get assembly version -->
+    <GetAssemblyIdentity AssemblyFiles="..\CastCenter2\bin\Release\net6.0-windows10.0.22000.0\CastManager.dll">
+      <Output TaskParameter="Assemblies" ItemName="AssemblyVersion" />
+    </GetAssemblyIdentity>
+    <!-- Define some variables we need -->
+    <PropertyGroup>
+      <DefineConstants>
+		  BuildVersion=%(AssemblyVersion.Version);
+		
+		  BasePath=..\CastCenter2\bin\$(Configuration)\net6.0-windows10.0.22000.0</DefineConstants>
+      <RunWixToolsOutOfProc Condition=" '$(PROCESSOR_ARCHITECTURE)'!='x86' ">true</RunWixToolsOutOfProc>
+    </PropertyGroup>
+    <!-- Harvest file components from publish folder -->
+    <HeatDirectory OutputFile="ComponentsGenerated.wxs" DirectoryRefId="INSTALLFOLDER" ComponentGroupName="PublishedComponents" SuppressCom="true" Directory="..\CastCenter2\bin\$(Configuration)\net6.0-windows10.0.22000.0" SuppressFragments="true" SuppressRegistry="true" SuppressRootDirectory="true" AutoGenerateGuids="false" GenerateGuidsNow="true" ToolPath="$(WixToolPath)" PreprocessorVariable="var.BasePath" RunAsSeparateProcess="$(RunWixToolsOutOfProc)" />
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

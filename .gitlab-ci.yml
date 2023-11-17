@@ -1,0 +1,104 @@
+deploy-dev:
+  environment:
+    name: dev
+  tags:
+    - windows
+  only:
+    - development
+  stage: deploy
+  script:
+    - |
+      cd .\
+      $PROJECT_PATH = Resolve-Path .\CastCenter2
+      $APP_VERSION = Get-AssemblyVersion -Path $PROJECT_PATH
+
+      $APP_VERSION = "$APP_VERSION.$CI_PIPELINE_IID"
+
+      Set-AssemblyVersion -Path $PROJECT_PATH -Version "$APP_VERSION"
+      nuget restore
+      msbuild -p:Configuration=Release -v:m
+
+      
+      echo "" "Current app version : $APP_VERSION"
+      
+      $RELEASE_PATH = ".\WixCastManagerSetup\bin\Release"
+
+      $FILE_NAME = "CastManager-$APP_VERSION"
+      
+      $MSI_NAME = "CastManager.msi"
+      $MSI_PATH = "$RELEASE_PATH\$MSI_NAME"
+      
+      echo "" "MSI_NAME : $MSI_NAME"
+      echo "" "MSI_PATH : $MSI_PATH"
+
+      $ZIP_NAME = "$FILE_NAME.zip"
+      $ZIP_PATH = "$RELEASE_PATH\$ZIP_NAME"
+      
+      echo "" "Compressing installer into a zip file"
+      Compress-Archive -Force "$MSI_PATH" "$ZIP_PATH" -Verbose -CompressionLevel Optimal
+
+      echo "" "Sending zipped installer to the server"
+      pscp -p  -r -batch -scp -l $SSH_BE_USER_DEV -pw $SSH_BE_PASS_DEV "$ZIP_PATH" 91.213.181.164:$DEPLOYMENT_SERVER_PATH_DEV
+      
+      echo "" "Triggering backend app update endpoint"
+      [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+      curl "$BE_HOST_DEV/mobile_api/update_app?file=$FILE_NAME&version=$APP_VERSION&app_type=3" -v -UseBasicParsing -h @{"API-TOKEN" = "$BE_API_TOKEN_DEV"} -UserAgent "GitLab_Runner" -Method Get
+            
+  artifacts:
+    when: on_success
+    name: CastManager 
+    paths:
+      - .\CastManager\Release\*.msi
+
+deploy-prod:
+  environment:
+    name: prod
+  tags:
+    - windows
+  only:
+    - production
+  stage: deploy
+  script:
+    - |
+      cd .\
+
+      $PROJECT_PATH = Resolve-Path .\CastCenter2
+      $APP_VERSION = Get-AssemblyVersion -Path $PROJECT_PATH
+
+      $APP_VERSION = "$APP_VERSION.$CI_PIPELINE_IID"
+      
+      Set-AssemblyVersion -Path $PROJECT_PATH -Version "$APP_VERSION"
+      nuget restore
+      msbuild -p:Configuration=Release -v:m
+      
+      echo "" "Current app version : $APP_VERSION"
+      
+     
+      $RELEASE_PATH = ".\WixCastManagerSetup\bin\Release"
+
+      $FILE_NAME = "CastManager-$APP_VERSION"
+      
+      $MSI_NAME = "CastManager.msi"
+      $MSI_PATH = "$RELEASE_PATH\$MSI_NAME"
+      
+      echo "" "MSI_NAME : $MSI_NAME"
+      echo "" "MSI_PATH : $MSI_PATH"
+
+      $ZIP_NAME = "$FILE_NAME.zip"
+      $ZIP_PATH = "$RELEASE_PATH\$ZIP_NAME"
+      
+      echo "" "Compressing installer into a zip file"
+      Compress-Archive -Force "$MSI_PATH" "$ZIP_PATH" -Verbose -CompressionLevel Optimal
+
+      echo "" "Sending zipped installer to the server"
+      pscp -p  -r -batch -scp -l $SSH_BE_USER_PROD -pw $SSH_BE_PASS_PROD "$ZIP_PATH" 91.213.181.164:$DEPLOYMENT_SERVER_PATH_PROD
+      
+      echo "" "Triggering backend app update endpoint"
+      [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+      curl "$BE_HOST_PROD/mobile_api/update_app?file=$FILE_NAME&version=$APP_VERSION&app_type=3" -v -UseBasicParsing -h @{"API-TOKEN" = "$BE_API_TOKEN_PROD"} -UserAgent "GitLab_Runner" -Method Get
+      
+  artifacts:
+    when: on_success
+    name: CastManager
+    paths:
+      - .\CastManager\Release\*.msi

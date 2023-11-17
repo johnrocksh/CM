@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi"
+	 xmlns:fire="http://schemas.microsoft.com/wix/FirewallExtension">
+	<!--add Namespace :FirewallExtension for  Firewall ruls-->
+
+	<!--INSTALLFOLDER  folder in ProgramFiles where would be installed project -->
+
+	<!--....................................................................................................................................................................-->
+
+	<!--1. DECLARING VARIABLES-->
+
+	<!-- path to the ..\TournamentBracket\bin\Debug-->
+	<?define TargetDir=$(var.CastManager.TargetDir)?>
+	<?define ProductName=$(var.CastManager.ProjectName)?>
+	<?define TargetFileName=$(var.CastManager.TargetFileName)?>
+	<?define UpgradeCode = "{A7B03A8F-A773-45FE-B306-719A0ABFD62B}" ?>
+
+	<!--....................................................................................................................................................................-->
+
+	<!--2. PRODUCT-->
+	<Product
+	Id="*"
+	Name="CastManager"
+	Language="1033"
+    Version="1.0.0.1"
+    Manufacturer="Tournament Expert"
+	UpgradeCode="$(var.UpgradeCode)" >
+
+		<!--....................................................................................................................................................................-->
+
+		<!--3. THIS IS ALSO NECESSARY-->
+		<Package
+			Id="*"
+			     InstallerVersion="200"
+				 Compressed="yes"
+				 InstallScope="perMachine"
+				 Languages="1033"
+				 Description="Cast Manager" />
+
+		<!--....................................................................................................................................................................-->
+
+		<!--4. WE DETERMINE HOW THE UPGRADE WILL OCCUR. WHEN REINSTALLING THE PROJECT-->
+		<!-- AllowDowngrades="yes" - overwrite  product anyway    AllowSameVersionUpgrades="yes" overwrite only if the installed version is higher than the previous ones  -->
+
+		<MajorUpgrade
+		Schedule="afterInstallValidate"
+	   AllowDowngrades="yes"
+       />
+		<!--....................................................................................................................................................................-->
+
+		<!--5. PACKS EVERYTHING INTO ONE MSI FILE WITHOUT .CAB-->
+		<MediaTemplate  EmbedCab="yes"/>
+
+		<!--....................................................................................................................................................................-->
+
+
+		<!--6. SET THE PATH TO THE ICON-->
+		<Icon Id="LOGO" SourceFile="..\CastCenter2\images\LOGO.ico"/>
+
+
+		<!--....................................................................................................................................................................-->
+
+
+
+		<!--7. Use the icon.ico icon for this installer (shows up in Add/Remove programs) -->
+		<Property Id="ARPPRODUCTICON">LOGO</Property>
+		
+		
+		<!--8. Help/Support website (shows in the Add/Remove programs) -->
+		<Property Id="ARPURLINFOABOUT">https://tournament.expert/</Property>
+		<Property Id="INSTALLDESKTOPSHORTCUT" Value="1" />
+
+		<!--....................................................................................................................................................................-->
+
+		<!--9. CONNECT UI-->
+		<Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+		<!--<UIRef Id="WixUI_InstallDir" />-->
+		<UIRef Id="My_InstallDir" />
+
+
+		<!--....................................................................................................................................................................-->
+		<!--10.REMOVE LICENSE FROM INSTALLER-->
+		<UI>
+			<UIRef Id="My_InstallDir" />
+			<Publish Dialog="WelcomeDlg"
+				  Control="Next"
+				  Event="NewDialog"
+				  Value="My_InstallDirDlg"
+				  Order="2">1</Publish>
+			<Publish Dialog="My_InstallDirDlg"
+				  Control="Back"
+				  Event="NewDialog"
+				  Value="WelcomeDlg"
+				  Order="2">1</Publish>
+		</UI>
+
+
+		<!--....................................................................................................................................................................-->
+		<!--11. CHENGE THE INSTALLER UI BACKGROUND IMAGES-->
+		<WixVariable Id="WixUILicenseRtf" Value="$(var.ProjectDir)\Assets\License.rtf" />
+		<WixVariable Id="WixUIDialogBmp" Value="$(var.ProjectDir)\Assets\Background.bmp" />
+		<WixVariable Id="WixUIBannerBmp" Value="$(var.ProjectDir)\Assets\Banner.bmp" />
+
+		<!--....................................................................................................................................................................-->
+
+		<!--12. DEFINE COMPONENTS, SHORTCUTS, FILES ETC    FOR INSTALLER-->
+		<Feature Id="ProductFeature" Title="CastManager" Level="1">
+			<ComponentGroupRef Id="PublishedComponents" />
+			<ComponentRef Id="ShortcutMenu"/>
+			<ComponentRef Id="ShortcutDesktop"/>
+			<ComponentRef Id="binary0"/>
+		</Feature>
+	</Product>
+
+	<!--....................................................................................................................................................................-->
+
+	<!--14. DEFINE DIRECTORY STRUCTURE-->
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="TempTest" FileSource="[TempFolder]"></Directory>
+			<!--System Folder Program Files-->
+			<Directory Id="ProgramFilesFolder">
+				<!-- subfolder named "TournamentBracket" where source files will be placed during installation-->
+				<Directory Id="MANUFACTURERFOLDER" Name="Tournament Expert" >
+					<Directory Id="INSTALLFOLDER" Name="CastManager" >
+						<Component Id='binary0' Guid='f0e2962c-8e8d-4715-bfd6-08749b7dc079'>
+							<File
+                                Id='vcruntime140.dll'
+                                Name='vcruntime140.dll'
+                                DiskId='1'
+                                Source='.\vcruntime140.dll'
+                                KeyPath='no'/>
+						</Component>
+					</Directory>
+				</Directory>
+			</Directory>
+			<Directory Id="DesktopFolder" Name="decktop"/>
+			<!-- system folder in the main menu-->
+			<Directory Id="ProgramMenuFolder" Name="MenuFolder" >
+				<!--folder with shortcuts in the main menu -->
+				<Directory Id="ApplicationProgramsFolder" Name="Tournament Expert" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+
+
+	<!--16. Create an application launch shortcut in Program Menu -->
+	<Fragment>
+		<Component Id="ShortcutMenu"
+               Guid="{0757ED43-650B-44CB-B046-33A80E23EB4A}"  
+               Directory="ApplicationProgramsFolder">
+      <Shortcut Id="StartMenu"
+                Name="CastManager"
+                Target="[INSTALLFOLDER]CastManager.exe"
+                WorkingDirectory="INSTALLFOLDER"
+                Directory="ApplicationProgramsFolder"
+                Icon="LOGO"/>
+			<!-- create an application entry in the registry -->
+			<Registry Root="HKCU" Key="SoftWare\[Manufacturer]\[ProductName]" Name="installed" Type="integer" Value="1" KeyPath="yes"/>
+			<!--Remove application shortcut from program menu on uninstall-->
+			<RemoveFolder Id="RemoveShortcut"  
+                    On="uninstall"
+                    Directory="ApplicationProgramsFolder"/>
+		</Component>
+	</Fragment>
+
+
+	<!--....................................................................................................................................................................-->
+	<!--17. -->
+	<Fragment>
+		<!-- Create desktop shortcut -->
+		<Component Id="ShortcutDesktop" 
+               Guid="{47F0997C-A335-4CA4-869E-6795E25A6668}"
+             Directory="DesktopFolder" >
+			<Condition>INSTALLDESKTOPSHORTCUT</Condition>
+			<Shortcut Id="ShortcutDesktop"
+                Name="CastManager"
+                Target="[INSTALLFOLDER]CastManager.exe"
+                WorkingDirectory="INSTALLFOLDER"
+                Directory="DesktopFolder"
+                Icon="LOGO"/>
+      <!-- create an application entry in the registry -->
+      <Registry Root="HKCU" Key="SoftWare\[Manufacturer]\[ProductName]" Name="installed" Type="integer" KeyPath="yes"/>
+      <!--Remove application shortcut from program menu on uninstall-->
+      <RemoveFolder Id="RemoveDesktopFolder"
+                    On="uninstall" 
+                    Directory="DesktopFolder"/>
+    </Component>
+	</Fragment>
+</Wix>

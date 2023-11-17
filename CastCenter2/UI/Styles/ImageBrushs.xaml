@@ -1,0 +1,118 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <ImageBrush
+        x:Key="settingsb"
+        ImageSource="../images/settingsb.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="settingsw"
+        ImageSource="../images/settingsw.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="addw"
+        ImageSource="../images/addw.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="addb"
+        ImageSource="../images/addb.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="editb"
+        ImageSource="../images/editb.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="editw"
+        ImageSource="../images/editw.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="picasterresetb"
+        ImageSource="../images/picasterresetb.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="picasterresetw"
+        ImageSource="../images/picasterresetw.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="close_app_mo"
+        ImageSource="../images/shutdown_mo.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="home_black"
+        ImageSource="../images/home_black.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="home_white"
+        ImageSource="../images/home_white.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="refresh_black"
+        ImageSource="../images/refresh_black.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="refresh_white"
+        ImageSource="/images/refresh_white.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="wifi_white"
+        ImageSource="../images/wifia.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="wifi_black"
+        ImageSource="../images/wifib.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="backbtnb"
+        ImageSource="../images/backbtnb.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="backbtnw"
+        ImageSource="../images/backbtnw.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="savebtnb"
+        ImageSource="../images/savebtnb.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="savebtnw"
+        ImageSource="../images/savebtnw.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="okw"
+        ImageSource="../images/okw.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="okb"
+        ImageSource="../images/okb.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="deletew"
+        ImageSource="../images/deletew.png"
+        Stretch="None" />
+
+    <ImageBrush
+        x:Key="deleteb"
+        ImageSource="../images/deleteb.png"
+        Stretch="None" />
+
+</ResourceDictionary>

@@ -1,0 +1,73 @@
+﻿<UserControl
+    x:Class="CastManager.Views.GridWndTemplate"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:tp="clr-namespace:CastManager.Templates"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+
+    <Grid>
+        <Border
+            Grid.Row="1"            
+            Background="White"            
+            CornerRadius="5">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition />
+                    <RowDefinition />
+                </Grid.RowDefinitions>
+                <RadioButton 
+                             Grid.Row="0"
+                             Grid.Column="0"
+                             Margin="2"
+                             HorizontalAlignment="Stretch"
+                             VerticalAlignment="Stretch"                             
+                             BorderBrush="Transparent"
+                             IsChecked="{Binding ImageSlot, Converter={StaticResource EnumToBool}, ConverterParameter={x:Static tp:ImageSlot.A}}"
+                             Style="{StaticResource {x:Type ToggleButton}}">
+                    <Image Stretch="Fill" Source="{Binding CurrentConfig.UrlA, Converter={StaticResource ImageConverter} }" />
+                </RadioButton>
+                <RadioButton
+                             Grid.Row="0"
+                             Grid.Column="1"  
+                             Margin="2"
+                             HorizontalAlignment="Stretch"
+                             BorderBrush="Transparent"
+                             VerticalAlignment="Stretch"                                                          
+                             IsChecked="{Binding ImageSlot, Converter={StaticResource EnumToBool}, ConverterParameter={x:Static tp:ImageSlot.B}}"
+                             Style="{StaticResource {x:Type ToggleButton}}">
+                    <Image Stretch="Fill" Source="{Binding CurrentConfig.UrlB, Converter={StaticResource ImageConverter} }" />
+                </RadioButton>
+                <RadioButton Grid.Row="1"
+                             Grid.Column="0"
+                             Margin="2"
+                             HorizontalAlignment="Stretch"
+                             VerticalAlignment="Stretch"
+                             
+                             BorderBrush="Transparent"
+                             IsChecked="{Binding ImageSlot, Converter={StaticResource EnumToBool}, ConverterParameter={x:Static tp:ImageSlot.C}}"
+                             Style="{StaticResource {x:Type ToggleButton}}">
+                    <Image Stretch="Fill" Source="{Binding CurrentConfig.UrlC, Converter={StaticResource ImageConverter} }" />
+                </RadioButton>
+                <RadioButton
+                             Grid.Row="1"
+                             Grid.Column="1"
+                             Margin="2"
+                             HorizontalAlignment="Stretch"
+                             VerticalAlignment="Stretch"
+                             BorderBrush="Transparent"
+                             IsChecked="{Binding ImageSlot, Converter={StaticResource EnumToBool}, ConverterParameter={x:Static tp:ImageSlot.D}}"
+                             Style="{StaticResource {x:Type ToggleButton}}">
+                    <Image Stretch="Fill" Source="{Binding CurrentConfig.UrlD, Converter={StaticResource ImageConverter} }"/>
+                </RadioButton>
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

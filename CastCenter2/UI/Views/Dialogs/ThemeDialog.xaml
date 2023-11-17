@@ -1,0 +1,120 @@
+﻿<Window x:Class="CastManager.Views.ThemeDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:CastManager.ViewModels"
+        mc:Ignorable="d"
+        MinWidth="250"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent"
+        Title="Theme"
+        Height="400"
+        Width="370">
+
+    <Window.DataContext>
+        <vm:ThemeViewModel/>
+    </Window.DataContext>
+
+    <Border BorderBrush="{DynamicResource ColorBrushButton}"
+            Background="{DynamicResource ColorBrushTop}"
+            CornerRadius="20"
+            BorderThickness="3">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.15*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions/>
+
+
+            <StackPanel Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" >
+                <Button Style="{DynamicResource HomeBtnStyle}"
+                    Visibility="Visible"
+                    Click="CloseWindowClick"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    Margin="15">
+                    <Image
+                        Source="/images/shutdown_mo.png" 
+                        Stretch="None" />
+                </Button>
+            </StackPanel>
+
+            <StackPanel Grid.Row="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+
+                <ListView d:ItemsSource="{d:SampleData ItemCount=15}"
+                Grid.Row="1"
+                Margin="15,0,15,15"
+                Background="{DynamicResource ColorBrushTop}"                      
+                ItemsSource="{Binding ColorThemes}"
+                SelectedItem="{Binding SelectedTheme}"
+                ScrollViewer.HorizontalScrollBarVisibility="Hidden"
+                ScrollViewer.VerticalScrollBarVisibility="Hidden"
+                ScrollViewer.CanContentScroll="true"
+                VirtualizingPanel.ScrollUnit="Item"                
+                BorderThickness="0">
+                    <ListView.ItemContainerStyle>
+                        <Style TargetType="ListViewItem">
+                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                        </Style>
+                    </ListView.ItemContainerStyle>
+                    <ListView.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Vertical"/>
+                        </ItemsPanelTemplate>
+                    </ListView.ItemsPanel>
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <DockPanel >
+                                <Label HorizontalAlignment="Stretch"
+                                       Content="{Binding ThemeName}"
+                                       FontSize="12"
+                                       Foreground="White" />
+                                <Grid DockPanel.Dock="Right" HorizontalAlignment="Right">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Border Grid.ColumnSpan="4" Background="Gray"
+                                            Height="25"
+                                            CornerRadius="10">
+                                        <StackPanel Grid.Column="1"
+                                                    Grid.ColumnSpan="3"
+                                                    Orientation="Horizontal">
+                                            <Border Grid.Column="0"
+                                                    Width="12"
+                                                    CornerRadius="12"
+                                                    Margin="5,5,5,5"
+                                                    Background="{Binding ColorTop}" />
+                                            <Border Grid.Column="1"
+                                                    Width="12"
+                                                    CornerRadius="12"
+                                                    Margin="2,5,2,5"
+                                                    Background="{Binding ColorCenter}" />
+                                            <Border Grid.Column="2"
+                                                    Width="12"
+                                                    CornerRadius="12"
+                                                    Margin="5,5,5,5"
+                                                    Background="{Binding ColorButton}" />
+                                            <Border Grid.Column="3"
+                                                    Width="12"
+                                                    CornerRadius="12"
+                                                    Margin="5,5,5,5"
+                                                    Background="{Binding ColorButtonPressed}" />
+                                        </StackPanel>
+                                    </Border>
+                                </Grid>
+                            </DockPanel>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

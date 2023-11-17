@@ -1,0 +1,106 @@
+﻿<Window x:Class="CastManager.Views.AddHostDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:CastManager.ViewModels" 
+        mc:Ignorable="d"
+        Title="" Height="180" Width="320"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Background="Transparent">
+
+    <Window.DataContext>
+        <vm:AddHostDialogViewModel/>
+    </Window.DataContext>
+
+    
+    <Window.CommandBindings>
+        <CommandBinding Command="Close" Executed="OnCloseDialog" />
+    </Window.CommandBindings>
+    
+    <Window.InputBindings>
+        <KeyBinding Command="Close" Key="Esc" />
+    </Window.InputBindings>    
+    
+    <Border  
+        Background="{DynamicResource ColorBrushTop}"
+        CornerRadius="20"
+        BorderBrush="{DynamicResource ColorBrushButton}"
+        BorderThickness="3">
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.6*"/>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="0.5*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <!--Close Button-->
+            <StackPanel HorizontalAlignment="Right" Margin="0,0,15,0">
+                <Button
+                    x:Name="Home" 
+                    Grid.Column="7"
+                    Visibility="Visible"    
+                    Click="OnCloseDialog"
+                    Background="Transparent"
+                    BorderBrush="Transparent"
+                    Style="{StaticResource HomeBtnStyle}"
+                    Height="30" IsCancel="True">
+                    <Image 
+                        Source="/images/shutdown_mo.png" 
+                        Stretch="None"/>
+                </Button>
+            </StackPanel>
+            <!--Enter Ip Address Text-->
+            <TextBlock 
+               Height="20"
+                Grid.Row="1"
+                Text="{DynamicResource EnterIp_Str}"
+                Foreground="DarkGray"
+                FontSize="12"
+                FontWeight="Medium"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                    Padding="22,0,0,0">
+                <TextBlock.Background>
+                    <ImageBrush ImageSource="/images/ip.png"
+                                Stretch =" None"
+                                AlignmentX="Left"/>
+                </TextBlock.Background>
+            </TextBlock>
+            <StackPanel Grid.Row="2" VerticalAlignment="Center" >
+                <TextBox
+                    Text="{Binding HostText}"
+                    FontSize="18"                    
+                    Background="{DynamicResource ColorBrushTop}"
+                    FontWeight="Medium"
+                    Foreground="White"
+                    CaretBrush="LightGray"
+                    BorderThickness="0,0,0,1"
+                    VerticalContentAlignment="Center" Margin="15,0,15,0" >
+                    <TextBox.InputBindings>
+                        <KeyBinding Key="Enter" Command="{Binding ConfirmCommand}" />
+                    </TextBox.InputBindings>
+                </TextBox>
+            </StackPanel>
+            <Button
+                Grid.Row="4"           
+                x:Name="btnTablo"
+                Background="{DynamicResource ColorBrushButton}"               
+                BorderBrush="Transparent"
+                Style="{StaticResource HomeBtnStyle}"
+                Click="OnCloseDialog"
+                BorderThickness="0"
+                Content ="{DynamicResource Ok_Str}"
+                Foreground="White"
+                Cursor="Hand"                      
+                Height="30"
+                Width="100"
+                Command="{Binding ConfirmCommand}"
+                HorizontalAlignment="Center" />
+        </Grid>
+    </Border>
+</Window>

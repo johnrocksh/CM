@@ -1,0 +1,1277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="CastManager.Core.DependencyInjection" Collapsed="true">
+    <Position X="20" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAAAAAAAAABAAAQAAAAAAAAZAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Core\DependencyInjection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Templates.Worker.AssemblyTemplateImageWorker">
+    <Position X="6" Y="9" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAhAAAAIAAAAAIIAAAAAA=</HashCode>
+      <FileName>CoreImpl\Workers\AssemblyTemplateImageWorker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Templates.Worker.TatamiImagesDownloaderWorker">
+    <Position X="9.5" Y="9" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAIAIAAAAAAAEAAIAAAAAAAAAAQAIAAAgAAIAAAAAA=</HashCode>
+      <FileName>CoreImpl\Workers\TatamiImagesDownloaderWorker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Worker.WorkerBase">
+    <Position X="8.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQACAAAAAABAAAQAAAAAIAAIAAIAAAAQAAAAA=</HashCode>
+      <FileName>CoreImpl\Workers\WorkerBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CastManager.Models.Desktops.DesktopConfig">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAQCABAAAFAAAAAAEAAAAAAAACAIAAAAAAAAABAAIAA=</HashCode>
+      <FileName>Models\Desktops\DesktopConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Models.Desktops.DesktopInfo">
+    <Position X="2.75" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAASABAQAhQCAAAAAgAAAAAAAAAAAAAAAAAACAABIAA=</HashCode>
+      <FileName>Models\Desktops\DesktopInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Models.Desktops.TatamiTabloInfo">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAAEAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Models\Desktops\TatamiTabloInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Models.Device.DeviceConfig">
+    <Position X="12.25" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAACAAAAAAIgAAAAAAAAAAAAAAQIAAAAAAAAAA=</HashCode>
+      <FileName>Models\Device\DeviceConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Models.Device.DeviceData" Collapsed="true">
+    <Position X="32.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAQBAAAAAAAAAAAAAAAAAAAEIAAAQ=</HashCode>
+      <FileName>Models\Device\DeviceData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Models.Device.DeviceId" Collapsed="true">
+    <Position X="18.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Device\DeviceId.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Models.Device.DeviceInfo">
+    <Position X="5.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAACAAAAIAAAAAAAAACAAAAAAAAAAAAAACgAA=</HashCode>
+      <FileName>Models\Device\DeviceInfo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Models.Device.HostConfig">
+    <Position X="10" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAQAAAAABAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Device\HostConfig.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Errors.ErrorData" Collapsed="true">
+    <Position X="28.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAAAAAIAAAAAAAAAAQAAAAACA=</HashCode>
+      <FileName>Models\Errors\ErrorData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Models.Templates.Assembly.DataContextAssembly" Collapsed="true">
+    <Position X="18.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Models\Templates\Assembly\DataContextAssembly.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Templates.ImageSlotData" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAggAgAICAAgEAAAAACAIAAAAAQAAAAEAAAA=</HashCode>
+      <FileName>Models\Templates\Config\ImageSlotData.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Templates.TemplateConfig">
+    <Position X="15" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>ACAAYAgkAAAAABAAAAJAEPS0ACACAAIIAaQCAAAEAAg=</HashCode>
+      <FileName>Models\Templates\Config\TemplateConfig.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CastManager.Templates.TemplateConfigs" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAgAAACHAAEAAIAAAAAAQAACIAABQEAAAAAAAAAgA=</HashCode>
+      <FileName>Models\Templates\Configs\TemplateConfigs.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Templates.PendingContent" Collapsed="true">
+    <Position X="25.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAIAAACAAAAAAAACA=</HashCode>
+      <FileName>Models\Templates\PendingContent\PendingContent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Templates.FileStorageTemplateImpl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Models\Templates\Storage\FileStorageTemplateImpl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Models.Theme.ColorTheme" Collapsed="true">
+    <Position X="34" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAABAAAAAACAAQAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Models\Theme\ColorTheme.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Models.NotifyPropertyBase">
+    <Position X="7.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\NotifyPropertyBase.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CastManager.View.ModalDialogs.DeviceHandMode" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAABAAAAAAEEAABAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\Dialogs\DeviceHandMode.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Views.DialogsFactory" Collapsed="true">
+    <Position X="23.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAAAAAAAAABAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\Dialogs\DialogsFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Views.ThemeDialog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAEEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\Dialogs\ThemeDialog.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Views.GridWndTemplate" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\MainPages\Templates\LeftPanels\content\GridWndTemplate.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Views.HorizontalTemplate" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\MainPages\Templates\LeftPanels\content\HorizontalTemplate.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Views.OneImageTemplate" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\MainPages\Templates\LeftPanels\content\OneImageTemplate.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Views.VerticalTemplate" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\MainPages\Templates\LeftPanels\content\VerticalTemplate.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Views.TemplateMenu" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\MainPages\Templates\LeftPanels\TemplateMenu.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Views.TemplateSelector" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\MainPages\Templates\LeftPanels\TemplateSelector.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Views.HomeControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAA=</HashCode>
+      <FileName>UI\Views\MainPages\Templates\RightPanels\origin\HomeControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Views.LinkToTabloControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\MainPages\Templates\RightPanels\origin\LinkToTabloControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Views.PicasterControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAEAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\MainPages\Templates\RightPanels\origin\PicasterControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Views.TatamiSelectorControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\MainPages\Templates\RightPanels\origin\TatamiSelectionControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Views.TemplateMakerControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\MainPages\Templates\RightPanels\TemplateMakerControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Views.TemplateOneImageControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\MainPages\Templates\RightPanels\TemplateOneImageControl.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Views.SettingsPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\MainPages\SettingsPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Views.TemplateListPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\MainPages\TemplateListPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Views.TemplatePage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\MainPages\TemplatePage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Views.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAABAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Views.Dialogs.PopUpInfo" Collapsed="true">
+    <Position X="27" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAQAAAAAACAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>UI\Views\Dialogs\PopUpTabloWnd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Views.Dialogs.PopUpTabloWnd" Collapsed="true">
+    <Position X="28.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAEAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\Dialogs\PopUpTabloWnd.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.View.Dialogs.InfoWnd" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Views\Dialogs\TabloInfoWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.ViewModels.TemplateViewModelsFactory" Collapsed="true">
+    <Position X="18.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAIAAEBAAAAAAAAAAAIAAAAAAAgAEAABAAAAAAQ=</HashCode>
+      <FileName>UI\ViewModels\Core\TemplateViewModelsFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.ViewModels.SettingsViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAiAAAEAAQAgAAAgAAACAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\ViewModels\MainPages\SettingsViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.ViewModels.TemplateViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQAAASAEAAQAIgAAQAYAAAASAAQAAEAAADQIgAAAAI=</HashCode>
+      <FileName>UI\ViewModels\MainPages\TemplateViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.ViewModels.GridWndTemplateViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAACAAAAAAAAAAAAAIgAAAAA=</HashCode>
+      <FileName>UI\ViewModels\Templates\Left\GridWndTemplateViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.ViewModels.HorizontalTemplateViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAACAAAAAAAAAAAAAIgAAAAA=</HashCode>
+      <FileName>UI\ViewModels\Templates\Left\HorizontalTemplateViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.ViewModels.OneImageTemplateViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAIgAAAAA=</HashCode>
+      <FileName>UI\ViewModels\Templates\Left\OneImageTemplateViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.ViewModels.VerticalTemplateViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAACAAAAAAAAAAAAAIgAAAAA=</HashCode>
+      <FileName>UI\ViewModels\Templates\Left\VerticalTemplateViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.ViewModels.OneImageTemplateMakerViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAIQAAAAA=</HashCode>
+      <FileName>UI\ViewModels\Templates\Right\OneImageTemplateMakerViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.ViewModels.OriginHomeTemplateMakerViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>UI\ViewModels\Templates\Right\OriginHomeTemplateMakerViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.ViewModels.OriginMakerLinkToTabloViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\ViewModels\Templates\Right\OriginMakerLinkToTabloViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.ViewModels.OriginMakerTatamiSelectionViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\ViewModels\Templates\Right\OriginMakerTatamiSelectionViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.ViewModels.PicasterViewModel" Collapsed="true">
+    <Position X="34" Y="5.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="CastManager.ViewModels.PicasterViewModel.PiPacherStatus" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>UI\ViewModels\Templates\Right\PicasterViewModel.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>IEAAAAAAIAEAAAEAAAAAEBgAwAAABJAAAAAgCIAABQA=</HashCode>
+      <FileName>UI\ViewModels\Templates\Right\PicasterViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.ViewModels.TemplateMakerViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\ViewModels\Templates\Right\TemplateMakerViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.ViewModels.InfoViewModel" Collapsed="true">
+    <Position X="28.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\ViewModels\InfoViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.ViewModels.MainViewModel" Collapsed="true">
+    <Position X="21.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAEKAAAQCAQAAAAAAAQAAAAACQAABAIQAAAgI=</HashCode>
+      <FileName>UI\ViewModels\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.ViewModels.ThemeViewModel" Collapsed="true">
+    <Position X="21.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAIAADFAABAAAAAAAAAAQgAAAIIAAAABAAQAA=</HashCode>
+      <FileName>UI\ViewModels\ThemeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Models.TemplatePageItem" Collapsed="true">
+    <Position X="25.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAACAAAACAAAACACAAAAAAAA=</HashCode>
+      <FileName>UI\ViewModels\Core\Pages\TemplatePageItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Models.TemplatePagesContainer" Collapsed="true">
+    <Position X="27" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAQgAAAAAAAAgAIAAA=</HashCode>
+      <FileName>UI\ViewModels\Core\Pages\TemplatePagesContainer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.UI.Converters.EnumToBoolConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Converters\EnumToBoolConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.UI.Converters.ImageConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Converters\ImageConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Helper.UIHelper" Collapsed="true">
+    <Position X="23.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\Helper\UIHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Models.Events.MouseBehaviour" Collapsed="true">
+    <Position X="27" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAQAAACAAgAAIAAAAAAA=</HashCode>
+      <FileName>UI\MouseOverHelpers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Utilities.SystemTray" Collapsed="true">
+    <Position X="25.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAABAAqAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Utilities\SystemTray.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Models.Extension.EnumExtension" Collapsed="true">
+    <Position X="25.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\EnumExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Extentions.FrameworkElementExtension" Collapsed="true">
+    <Position X="32.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\FrameworkElementExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Extentions.ObservableCollectionExtension" Collapsed="true">
+    <Position X="30.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Extensions\ObservableCollectionExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Extentions.StreamExtension" Collapsed="true">
+    <Position X="21.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\StreamExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Helper.WlanClientExtension" Collapsed="true">
+    <Position X="34" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Extensions\WlanClientExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Helper.CastManagerAssembly" Collapsed="true">
+    <Position X="28.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Helper\Assembly.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Helper.Network" Collapsed="true">
+    <Position X="28.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AJAIAAAAAAAAABgAAAAAAAAAAAAgAgAAAAAAAQAAEIA=</HashCode>
+      <FileName>Helper\Network.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Logger.Logger" Collapsed="true">
+    <Position X="34" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Logger\Logger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.StringsResources.Strings" Collapsed="true">
+    <Position X="23.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEBAAAAAAAAAABAAAAAAABAAgAAAAAAACAAQAACAAA=</HashCode>
+      <FileName>StringsResources\Strings.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Client.Desktop.DesktopClient" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAgAAAAAAAAAAIAAAAACAAgAAIAAAA=</HashCode>
+      <FileName>CoreImpl\Clients\Desktop\DesktopClient.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Client.Device.DeviceClient" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAgAAAABCAAAAAAAAAAAAAAAoAAAkAAAAAAAAAIAA=</HashCode>
+      <FileName>CoreImpl\Clients\Device\DeviceClient.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Client.Device.WifiConnectData" Collapsed="true">
+    <Position X="28.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Clients\Device\WifiConnectData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Client.Device.AccessPointConfig" Collapsed="true">
+    <Position X="18.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Clients\Device\WifiConnectData.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Client.Poll.PollClient" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAFAAAAAAAAAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Clients\Poll\PollClient.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Client.ClientsFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAAAAAAAAAAAAAAAAQAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Clients\ClientsFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Client.ClientsFactoryMock" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAACAAAAAAIAAAAAAQAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Mocks\ClientsFactoryMock.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Client.Desktop.DesktopClientMock" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="23.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Mocks\DesktopClientMock.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Client.Device.DeviceClientMock" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAgAAAAAQAAAAAAAAAAAAAAAgAAAEAAAAAAAAABAA=</HashCode>
+      <FileName>CoreImpl\Mocks\DeviceClientMock.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Client.Poll.PollClientMock" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABABAAAAAAAAAAAAMAgAAAAAAIAAAA=</HashCode>
+      <FileName>CoreImpl\Mocks\PollClientMock.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Properties.Resources" Collapsed="true">
+    <Position X="30.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQEAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Models.PicasterPatcher" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="28.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAgAAwAAAACAAQAAAAAAAAAQ=</HashCode>
+      <FileName>CoreImpl\PiCaster\PicasterPatcher.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Models.PicasterPatcherMock" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAgAAAAAAAQAACAAAAAAQ=</HashCode>
+      <FileName>CoreImpl\PiCaster\PicasterPatcherMock.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Models.PicasterSimpleWifi" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32.25" Y="5.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="CastManager.Models.PicasterSimpleWifi.ConnectData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CoreImpl\PiCaster\PicasterSimpleWifi.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAIAAAAAAgAAAAAAAQAAACAAAgAQ=</HashCode>
+      <FileName>CoreImpl\PiCaster\PicasterSimpleWifi.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Models.PicasterWifiItem" Collapsed="true">
+    <Position X="18.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAABAAAAAQAEAAAAAAE=</HashCode>
+      <FileName>CoreImpl\PiCaster\PicasterWifiItem.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.CoreImpl.MonitorService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABAAEAAIgAAAAQAAAAAAAIAAAIAAAAAg=</HashCode>
+      <FileName>CoreImpl\MonitorServices\MonitorService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.CoreImpl.AppConfiguration" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAEAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\AppConfiguration.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.CoreImpl.AppGlobalEvents" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\AppGlobalEvents.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.CoreImpl.DesktopsService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="27" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAACAAAAAAAAAAQAAAAAEAAAAAAAAAAAAAAIAIEAAA=</HashCode>
+      <FileName>CoreImpl\DesktopsService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.CoreImpl.DevicesService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAUAAEAAAAEAAAAAAAAABQEgBAAAAAAIABAIBAAA=</HashCode>
+      <FileName>CoreImpl\DevicesService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.CoreImpl.LookupService" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="18.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgIAIAAAACBBAQkAAAAAAAAAACYAgAAhIAAAgAABAAg=</HashCode>
+      <FileName>CoreImpl\LookupService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.CoreImpl.TemplateHttpServer" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="30.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgACAAAAAAAAAAAAAAACIAAAAAIAAAIAAAAAI=</HashCode>
+      <FileName>CoreImpl\TemplateHttpServer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Models.Desktops.PingDesktopsService" Collapsed="true">
+    <Position X="20" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAQAAAAAAIAAAIAAAAAIAAAIAAEAAA=</HashCode>
+      <FileName>CoreImpl\MonitorServices\PingDesktopsService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.Models.Device.PingDevicesService" Collapsed="true">
+    <Position X="21.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAEAAAAAAAAQAIAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\MonitorServices\PingDevicesService.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.CoreImpl.Lookup.Addresses.ActiveAddresses" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQEAAAAAAAAAAAAAAAAAACBAAAAAAEAAAAAAACEAA=</HashCode>
+      <FileName>CoreImpl\Workers\Lookup\Addresses\ActiveAddresses.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.CoreImpl.Lookup.Addresses.ActiveAddressesException" Collapsed="true">
+    <Position X="21.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Workers\Lookup\Addresses\ActiveAddressesException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CastManager.CoreImpl.Lookup.RoundRobin.RoundRobin" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAACAgAAIAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Workers\Lookup\RoundRobin\RoundRobin.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.CoreImpl.Lookup.RoundRobin.RoundRobinContainer&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="34" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAEAAAAAAAIABAAAAIAQAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Workers\Lookup\RoundRobin\RoundRobinContainer.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.CoreImpl.Lookup.DesktopDiscoveryWorker" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="25.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAgAAACAAEAAABAgAQAAAACAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Workers\Lookup\DesktopDiscoveryWorker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.CoreImpl.Lookup.DevicesDiscoveryWorker" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAgAAACAAAAAABAgAQAAAACAAAAEAIAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Workers\Lookup\DevicesDiscoveryWorker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.CoreImpl.Lookup.LookupWorker" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="20" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAAgBAEgAQAQAAAAAAgAQAAACAAAAAoEAAEAgUUAAQg=</HashCode>
+      <FileName>CoreImpl\Workers\Lookup\LookupWorker.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.Templates.Worker.TemplatesWorkers" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAABAAAQAAAAAAAACAAIAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Workers\TemplatesWorkers.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="NativeWifi.Wlan" Collapsed="true">
+    <Position X="30.5" Y="9.5" Width="1.5" />
+    <NestedTypes>
+      <Struct Name="NativeWifi.Wlan.WlanPhyRadioState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="NativeWifi.Wlan.WlanAccess" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="NativeWifi.Wlan.WlanBssListHeader" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="NativeWifi.Wlan.WlanNotificationCodeAcm" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Class Name="NativeWifi.Wlan.WlanException" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Enum Name="NativeWifi.Wlan.WlanInterfaceState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="NativeWifi.Wlan.WlanAvailableNetworkListHeader" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="NativeWifi.Wlan.Dot11BssType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="NativeWifi.Wlan.WlanNotificationData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="NativeWifi.Wlan.WlanConnectionAttributes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="NativeWifi.Wlan.WlanInterfaceInfo" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="NativeWifi.Wlan.WlanBssEntry" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Delegate Name="NativeWifi.Wlan.WlanNotificationCallbackDelegate" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Enum Name="NativeWifi.Wlan.WlanConnectionMode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="NativeWifi.Wlan.WlanAssociationAttributes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="NativeWifi.Wlan.WlanRateSet" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="NativeWifi.Wlan.WlanConnectionParameters" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="NativeWifi.Wlan.WlanOpcodeValueType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="NativeWifi.Wlan.WlanProfileInfoListHeader" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="NativeWifi.Wlan.WlanSecurityAttributes" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Struct Name="NativeWifi.Wlan.WlanInterfaceInfoListHeader" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="NativeWifi.Wlan.Dot11RadioState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="NativeWifi.Wlan.Dot11OperationMode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="NativeWifi.Wlan.WlanConnectionFlags" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="NativeWifi.Wlan.WlanRadioState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="NativeWifi.Wlan.WlanAvailableNetworkFlags" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="NativeWifi.Wlan.Dot11PhyType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="NativeWifi.Wlan.WlanProfileInfo" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="NativeWifi.Wlan.WlanIntfOpcode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="NativeWifi.Wlan.WlanAvailableNetwork" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="NativeWifi.Wlan.WlanNotificationSource" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="NativeWifi.Wlan.WlanConnectionNotificationData" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="NativeWifi.Wlan.WlanGetAvailableNetworkFlags" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="NativeWifi.Wlan.Dot11CipherAlgorithm" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="NativeWifi.Wlan.WlanReasonCode" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="NativeWifi.Wlan.WlanProfileFlags" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="NativeWifi.Wlan.Dot11AuthAlgorithm" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Enum Name="NativeWifi.Wlan.WlanAdhocNetworkState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+      <Struct Name="NativeWifi.Wlan.Dot11Ssid" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+      <Enum Name="NativeWifi.Wlan.WlanNotificationCodeMsm" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\Interop.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>SAAAGAgBAIEEwAAAEAAAAABAABAAAAAgAQAAgAgAAAI=</HashCode>
+      <FileName>WlanApi\Interop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="NativeWifi.WlanClient" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="32.25" Y="9.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="NativeWifi.WlanClient.WlanInterface" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>WlanApi\WlanApi.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>ASAAAAAAAAAAAAAAAAAAAAgAgAAEAAAAACARgACAAAA=</HashCode>
+      <FileName>WlanApi\WlanApi.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="CastManager.App" Collapsed="true">
+    <Position X="23.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAACAAAAQAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CastManager.Core.IAppConfiguration" Collapsed="true">
+    <Position X="20" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\IAppConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Core.IAppGlobalEvents" Collapsed="true">
+    <Position X="21.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\IAppGlobalEvents.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Core.IDesktopsService" Collapsed="true">
+    <Position X="28.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Core\IDesktopsService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Core.IDevicesService" Collapsed="true">
+    <Position X="32.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAABEAAAAQGAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Core\IDevicesService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Core.ILookupService" Collapsed="true">
+    <Position X="18.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAACBAAAAAAAAAAAAAAAQAgAAAIAAAAAABAAg=</HashCode>
+      <FileName>Core\ILookupService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Core.IMonitorService" Collapsed="true">
+    <Position X="20" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAABAAEAAAAAAAAQAAAAAAAIAAAIAAAAAg=</HashCode>
+      <FileName>Core\IMonitorService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Core.ITemplateHttpServer" Collapsed="true">
+    <Position X="34" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Core\ITemplateHttpServer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Core.ITemplatesService" Collapsed="true">
+    <Position X="20" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAQAAAQhAAAAAAAQAAgAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Core\ITemplatesService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Models.IPicasterPatcher" Collapsed="true">
+    <Position X="23.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAgAAAAAAAQAAAAAAAAAQ=</HashCode>
+      <FileName>Core\IPicasterPatcher.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Worker.IWorker" Collapsed="true">
+    <Position X="21.75" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAABAAAQAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>Core\IWorker.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Templates.IImageSlotData" Collapsed="true">
+    <Position X="34" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Templates\Config\IImageSlotData.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Templates.ITemplateConfig" Collapsed="true">
+    <Position X="30.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAgAAAAAABAAAAIAAPSgAAAAAAIAAQQCAAAEAAg=</HashCode>
+      <FileName>Models\Templates\Config\ITemplateConfig.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Templates.ITemplateConfigs" Collapsed="true">
+    <Position X="32.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEAAEAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Templates\Configs\ITemplateConfigs.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Templates.ITemplatesConfigStorage" Collapsed="true">
+    <Position X="18.25" Y="12.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Templates\Storage\ITemplatesConfigStorage.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.ViewModels.IPage" Collapsed="true">
+    <Position X="21.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\ViewModels\Core\Pages\IPages.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Client.Desktop.IDesktopClient" Collapsed="true">
+    <Position X="25.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Clients\Desktop\IDesktopClient.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Client.Desktop.IDesktopsDiscovery" Collapsed="true">
+    <Position X="27" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Clients\Desktop\IDesktopsDiscovery.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Client.Device.IDeviceClient" Collapsed="true">
+    <Position X="30.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQBAAAIEAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Clients\Device\IDeviceClient.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Client.Poll.IPollClient" Collapsed="true">
+    <Position X="25.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Clients\Poll\IPollClient.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.Client.IClientsFactory" Collapsed="true">
+    <Position X="23.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAgAAAAAAAAAAAAgAAAAAAABAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Clients\IClientsFactory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.CoreImpl.Lookup.Addresses.IAddressesLoop" Collapsed="true">
+    <Position X="18.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAEAAAAAAAAAAAAAIAAAQAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Workers\Lookup\Addresses\IAddressesLoop.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.CoreImpl.Lookup.RoundRobin.IRoundRobin" Collapsed="true">
+    <Position X="27" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Workers\Lookup\RoundRobin\IRoundRobin.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CastManager.CoreImpl.Lookup.RoundRobin.IRoundRobinContainer&lt;T&gt;" Collapsed="true">
+    <Position X="28.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAACAAAAAAAQAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\Workers\Lookup\RoundRobin\IRoundRobinContainer.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="CastManager.Models.Desktops.DesktopStatus" Collapsed="true">
+    <Position X="20" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAABAQQAAAAAAAAAIAgAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Desktops\DesktopStatus.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CastManager.Models.Device.Animation" Collapsed="true">
+    <Position X="18.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Models\Device\HostConfig.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CastManager.Errors.ErrorNum" Collapsed="true">
+    <Position X="21.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAACAAAAAAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Errors\ErrorNum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CastManager.Templates.ImageSlot" Collapsed="true">
+    <Position X="23.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAApAEAAAA=</HashCode>
+      <FileName>Models\Templates\Config\ImageSlot.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CastManager.Templates.TemplatePageNum" Collapsed="true">
+    <Position X="28.75" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAQAAAAAAAAAIAAAAABAAAAAAIAAAEAAA=</HashCode>
+      <FileName>Models\Templates\Config\TemplatePageNum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CastManager.Templates.TemplateType" Collapsed="true">
+    <Position X="30.5" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAABAAAAAAAAAAAIAAAAABAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Models\Templates\Config\TemplateType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CastManager.ViewModels.PageNum" Collapsed="true">
+    <Position X="27" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAACAAAAAAAAAAAAAA=</HashCode>
+      <FileName>UI\ViewModels\Core\Pages\PageNum.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="CastManager.CoreImpl.ItemAction" Collapsed="true">
+    <Position X="25.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAAAEAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>CoreImpl\ItemAction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
